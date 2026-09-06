@@ -1,15 +1,23 @@
 {
-  "name": "@tscircuit/dataset-happy-autorouter",
+  "name": "@tscircuit/dataset-srj34-single-side-four-layer",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "50 immutable top-component-only SRJ benchmark cases with source provenance",
+  "description": "50 original top-component-only SimpleRouteJson benchmarks and a public geometry browser",
   "license": "MIT",
-  "exports": { ".": "./lib/dataset.mjs", "./manifest.json": "./manifest.json" },
+  "exports": {
+    ".": "./lib/dataset.mjs",
+    "./manifest.json": "./manifest.json"
+  },
   "scripts": {
-    "test": "node scripts/filter.test.mjs && node scripts/validate.mjs",
+    "test": "node scripts/filter.test.mjs && node scripts/validate.mjs && node --test scripts/site.test.mjs scripts/curation-sources.test.mjs",
     "validate": "node scripts/validate.mjs",
     "validate:upstream": "node scripts/validate.mjs --verify-remote",
-    "curate": "node scripts/curate.mjs"
+    "curate": "node scripts/curate.mjs",
+    "build": "node scripts/build-site.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tscircuit/dataset-srj34-single-side-four-layer.git"
   }
 }

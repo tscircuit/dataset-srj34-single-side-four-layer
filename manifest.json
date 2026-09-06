@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "name": "dataset-happy-autorouter",
-  "repository": "https://github.com/tscircuit/dataset-happy-autorouter",
+  "name": "dataset-srj34-single-side-four-layer",
+  "repository": "https://github.com/tscircuit/dataset-srj34-single-side-four-layer",
   "selection": {
     "legacyCount": 25,
     "bugReportCount": 25,

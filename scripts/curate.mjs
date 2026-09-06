@@ -1,16 +1,18 @@
-import {readFileSync,readdirSync,writeFileSync,copyFileSync} from 'node:fs'
-import {resolve,relative,basename,dirname} from 'node:path'
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs'
+import {resolve,basename,dirname} from 'node:path'
 import {fileURLToPath} from 'node:url'
-import {execFileSync} from 'node:child_process'
 import {sha256,canonicalize,boardGeometrySha256,hasBottomComponents} from '../lib/dataset.mjs'
-const root=resolve(dirname(fileURLToPath(import.meta.url)), '..')
+import {pinnedSources,readGitSnapshot,readPublicLegacyDatasets} from './curation-sources.mjs'
 const args=process.argv.slice(2)
 const readArg=name=>{const index=args.indexOf(name);if(index<0||!args[index+1])throw new Error(`Required: ${name} PATH`);return resolve(args[index+1])}
+const root=args.includes('--output-root')?readArg('--output-root'):resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const upstream=readArg('--autorouter-root')
-const upstreamCommit=execFileSync('git',['-C',upstream,'rev-parse','HEAD'],{encoding:'utf8'}).trim()
-if(upstreamCommit!=='fb6c6d77c091a56c9e1d4648bbac40a7cccd0def')throw new Error('Autorouter source is not at the pinned curation commit')
-const legacyRoot=readArg('--legacy-root')
-const legacy=JSON.parse(readFileSync(resolve(legacyRoot,'manifest.json'),'utf8'))
+const upstreamCommit=pinnedSources.autorouter.commit
+const legacyRoot=args.includes('--legacy-root')?readArg('--legacy-root'):undefined
+if(legacyRoot&&(args.includes('--dataset01-root')||args.includes('--srj18-root')))throw new Error('Choose public source roots or --legacy-root, not both')
+const legacy=legacyRoot?JSON.parse(readFileSync(resolve(legacyRoot,'manifest.json'),'utf8')):{datasets:readPublicLegacyDatasets(readArg('--dataset01-root'),readArg('--srj18-root'))}
+const bugReports=readGitSnapshot(upstream,pinnedSources.autorouter)
+mkdirSync(resolve(root,'samples'),{recursive:true})
 const selected=[],decisions=[],geometry=new Set(),contents=new Set()
 function consider(candidate,bytes,raw,srj){
  const common={source:candidate.source,path:candidate.source.path}
@@ -26,22 +28,20 @@ function consider(candidate,bytes,raw,srj){
  decisions.push({...common,decision:'selected',sample:sample.name})
  return true
 }
-for(const dataset of legacy.datasets.filter(d=>d.name!=='happy'))for(const sample of dataset.samples){
- const bytes=readFileSync(resolve(legacyRoot,sample.file)),srj=JSON.parse(bytes)
- if(sha256(bytes)!==sample.sha256)throw new Error('Legacy checksum changed')
+for(const dataset of legacy.datasets.filter(d=>d.name==='dataset01'||d.name==='dataset-srj18'))for(const sample of dataset.samples){
+ const pinned=pinnedSources[dataset.name]
+ if(dataset.repository!==pinned.repository||dataset.commit!==pinned.commit||dataset.samples.length!==pinned.count)throw new Error('Legacy manifest differs from the pinned public source set')
+ const bytes=legacyRoot?readFileSync(resolve(legacyRoot,sample.file)):sample.bytes,srj=JSON.parse(bytes)
+ if(legacyRoot&&sha256(bytes)!==sample.sha256)throw new Error('Legacy checksum changed')
  const path=dataset.name==='dataset01'?`lib/dataset/${basename(sample.file)}`:`samples/${basename(sample.file)}`
  consider({name:`${dataset.name}-${sample.name}`,file:`samples/${dataset.name}-${sample.name}.json`,category:'legacy-dataset',
  srjJsonPointer:'',source:{repository:dataset.repository,commit:dataset.commit,path,url:`${dataset.repository}/blob/${dataset.commit}/${path}`,
  license:dataset.name==='dataset01'?'MIT':'Apache-2.0 (source board)',dataset:dataset.name}},bytes,srj,srj)
 }
 if(selected.length!==25)throw new Error(`Expected 25 unique eligible legacy inputs, found ${selected.length}`)
-const paths=[]
-function walk(dir){for(const ent of readdirSync(dir,{withFileTypes:true}))if(ent.isDirectory())walk(resolve(dir,ent.name));else if(ent.name.endsWith('.json'))paths.push(relative(upstream,resolve(dir,ent.name)))}
-walk(resolve(upstream,'fixtures/bug-reports'))
-paths.sort((a,b)=>(Number(a.match(/bugreport(\d+)/)?.[1]??Infinity)-Number(b.match(/bugreport(\d+)/)?.[1]??Infinity))||a.localeCompare(b))
+bugReports.sort((a,b)=>(Number(a.path.match(/bugreport(\d+)/)?.[1]??Infinity)-Number(b.path.match(/bugreport(\d+)/)?.[1]??Infinity))||a.path.localeCompare(b.path))
 let bugCount=0
-for(const path of paths){
- const bytes=execFileSync('git',['-C',upstream,'show',`${upstreamCommit}:${path}`],{maxBuffer:20*1024*1024})
+for(const {path,bytes} of bugReports){
  let raw;try{raw=JSON.parse(bytes)}catch{continue}
  const srj=raw.simple_route_json
  if(!raw.autorouting_bug_report_id||!srj?.obstacles||!srj?.connections||!srj?.bounds)continue
@@ -53,7 +53,7 @@ for(const path of paths){
  if(consider({name:basename(path,'.json'),file:`samples/${basename(path)}`,category:'bug-report',srjJsonPointer:'/simple_route_json',source},bytes,raw,srj))bugCount++
 }
 if(selected.length!==50)throw new Error(`Expected 50 actual unique originals, found ${selected.length}`)
-const manifest={version:1,name:'dataset-happy-autorouter',repository:'https://github.com/tscircuit/dataset-happy-autorouter',
+const manifest={version:1,name:'dataset-srj34-single-side-four-layer',repository:'https://github.com/tscircuit/dataset-srj34-single-side-four-layer',
  selection:{legacyCount:25,bugReportCount:25,policy:'All unique eligible inputs from pinned dataset01/dataset-srj18; then first 25 unique eligible genuine wrapped bug reports in numeric fixture order. Selection never invokes any router.',
  duplicatePolicy:'Canonical SRJ hash plus conservative board geometry hash: sorted obstacle layout and bounds rounded to 0.00001 mm, ignoring IDs and existing routes.',
  bottomPolicy:'Exclude bottom SMT pads and bottom-only terminals without plated-hole or same-net existing-copper evidence; retain PTH and bottom routing copper.'},samples:selected}

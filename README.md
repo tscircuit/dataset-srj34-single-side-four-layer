@@ -1,12 +1,18 @@
-# dataset-happy-autorouter
+# dataset-srj34-single-side-four-layer
 
-50 genuine, immutable SimpleRouteJson benchmark inputs for [happy-autorouter](https://github.com/tscircuit/happy-autorouter), curated for boards with components on top. This private repository was provisioned through `tscircuit/create-repo`.
+50 genuine, immutable SimpleRouteJson benchmark inputs for via-in-pad, four-layer autorouting, curated for boards with components on top. This public repository was provisioned through `tscircuit/create-repo`.
 
 | Source | Cases | Pinned commit |
 | --- | ---: | --- |
 | [autorouting-dataset-01](https://github.com/tscircuit/autorouting-dataset-01) | 23 | `b97f5052a2359ab2da3f186765c6a5e839535efb` |
 | [dataset-srj18](https://github.com/tscircuit/dataset-srj18) | 2 | `c0aad90256a95256fcac814f9f7da81a82a2fdea` |
 | [tscircuit-autorouter bug reports](https://github.com/tscircuit/tscircuit-autorouter/tree/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports) | 25 | `fb6c6d77c091a56c9e1d4648bbac40a7cccd0def` |
+
+[Browse the dataset](https://dataset-srj34-single-side-four-layer.vercel.app/) · [Open a pull request](https://github.com/tscircuit/dataset-srj34-single-side-four-layer/compare)
+
+The `staff` and `maintainers` teams have maintain access. See [Contributing](CONTRIBUTING.md) for pull requests, immutable sample requirements, and local checks. Dataset integrity and site builds run in CI. The hosted dataset browser deploys from `main` through Vercel.
+
+The name describes the target routing technique: components on one side, routing on a four-layer board. Original inputs retain their one-, two-, or four-layer stacks unchanged.
 
 ## Original files and provenance
 
@@ -44,14 +50,20 @@ npm run validate:upstream
 
 `npm test` verifies original bytes, extracted SRJ hashes, layout uniqueness, exact 25+25 membership, provenance, sizes, and top-side eligibility. `validate:upstream` additionally downloads all 50 immutable upstream files and confirms byte equality. GitHub Actions checks local integrity on each push and pull request.
 
-Reproduce curation using an upstream checkout and the pinned legacy inputs vendored by happy-autorouter:
+Reproduce curation using Git checkouts of the three public source repositories. Fetch the pinned commits if they are not already present:
 
 ```sh
-npm run curate -- --autorouter-root /path/to/tscircuit-autorouter --legacy-root /path/to/happy-autorouter/datasets
-npm test
+git -C /path/to/tscircuit-autorouter fetch origin fb6c6d77c091a56c9e1d4648bbac40a7cccd0def
+git -C /path/to/autorouting-dataset-01 fetch origin b97f5052a2359ab2da3f186765c6a5e839535efb
+git -C /path/to/dataset-srj18 fetch origin c0aad90256a95256fcac814f9f7da81a82a2fdea
+npm run curate -- \
+  --autorouter-root /path/to/tscircuit-autorouter \
+  --dataset01-root /path/to/autorouting-dataset-01 \
+  --srj18-root /path/to/dataset-srj18 \
+  --output-root /tmp/srj34-reproduced
 ```
 
-Curation requires the pinned autorouter commit, reads report files from Git objects, and verifies the legacy manifest's hashes before selection.
+Curation reads the exact pinned Git trees and file bytes, independent of each checkout's current branch or uncommitted changes. The optional output directory lets you compare a fresh reproduction without rewriting the checked-in dataset. Omit `--output-root` to update this repository intentionally. The older `--legacy-root` option remains compatible with existing vendored dataset01/dataset-srj18 inputs.
 
 ## Licensing
 
