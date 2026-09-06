@@ -14,7 +14,7 @@ function drawList() {
     button.type = "button"; button.setAttribute("aria-current", String(state.selected?.name === sample.name))
     button.append(element("strong", sample.name))
     const meta = element("span", undefined, "sample-item-meta")
-    meta.append(element("span", `${sample.layerCount}L`, "badge"), element("span", sample.category === "bug-report" ? "Bug report" : sample.source.dataset), element("span", `${sample.connectionCount} net${sample.connectionCount === 1 ? "" : "s"}`, "count"))
+    meta.append(element("span", `${sample.layerCount}L`, "badge"), element("span", sample.category === "bug-report" ? "Bug report" : sample.category === "contributed-regression" ? "Contributed" : sample.source.dataset), element("span", `${sample.connectionCount} net${sample.connectionCount === 1 ? "" : "s"}`, "count"))
     if (sample.correction) meta.append(element("span", "Corrected", "badge"))
     button.append(meta); button.addEventListener("click", () => selectSample(sample.name)); return button
   }))
@@ -51,17 +51,20 @@ async function selectSample(name, updateHistory = true) {
     if (request !== state.request) return
     state.srj = srj; state.layers = availableLayers(srj); state.view = frameFor(srj)
     $("sample-name").textContent = sample.name
-    $("sample-category").textContent = `${sample.category === "bug-report" ? "Bug report" : "Original dataset"} / ${sample.source.dataset ?? "tscircuit-autorouter"}`
+    $("sample-category").textContent = `${sample.category === "bug-report" ? "Bug report" : sample.category === "contributed-regression" ? "Contributed regression" : "Original dataset"} / ${sample.source.dataset ?? "tscircuit-autorouter"}`
     $("sample-stats").replaceChildren(...[[sample.connectionCount,"connections"],[sample.terminalCount,"terminals"],[sample.obstacleCount,"obstacles"],[`${sample.layerCount} layer${sample.layerCount === 1 ? "" : "s"}`,"original stack"],[`${compact(srj.bounds.maxX-srj.bounds.minX)} × ${compact(srj.bounds.maxY-srj.bounds.minY)}`,"bounds · mm"]].map(([value,label]) => { const item=element("div"); item.append(element("strong",value),element("span",label)); return item }))
     $("srj-download").href = sample.srjFile; $("srj-download").download = `${sample.name}.srj.json`
     $("raw-download").textContent = sample.correction ? "Corrected file ↓" : "Original file ↓"
-    $("original-download").hidden = !sample.correction
-    if (sample.correction) {
-      $("original-download").href = `/${sample.correction.originalFile}`
+    const originalFile = sample.correction?.originalFile ?? (sample.category === "contributed-regression" ? sample.source.path : undefined)
+    $("original-download").hidden = !originalFile
+    if (originalFile) {
+      $("original-download").href = `/${originalFile}`
       $("original-download").download = `${sample.name}.original.json`
     }
     $("input-provenance").textContent = sample.correction
       ? `Derived input: ${sample.correction.changes.map(change => `${change.path}: ${change.from} → ${change.to}`).join("; ")}. ${sample.correction.reason} The preserved original remains byte-for-byte upstream data.`
+      : sample.category === "contributed-regression"
+      ? `This input is a byte-for-byte original export pinned to its source commit. ${sample.source.attribution}`
       : "This input is byte-for-byte upstream data. Wrapped bug reports also provide an extracted SRJ download."
     $("raw-download").href = `/${sample.file}`; $("raw-download").download = `${sample.name}.json`
     $("layers").replaceChildren(...state.layers.map(layer => { const button=element("button",undefined,"layer-button"); button.type="button"; button.style.setProperty("--layer-color",LAYER_COLORS[layer] ?? "#9caec2"); button.setAttribute("aria-pressed","true"); button.append(element("span"),document.createTextNode(layer)); button.addEventListener("click",() => { state.layers = state.layers.includes(layer) ? state.layers.filter(value => value !== layer) : [...state.layers,layer]; button.setAttribute("aria-pressed",String(state.layers.includes(layer))); redraw() }); return button }))

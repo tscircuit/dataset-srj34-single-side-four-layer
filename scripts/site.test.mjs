@@ -11,17 +11,26 @@ const manifest = JSON.parse(await readFile(resolve(repositoryRoot, "manifest.jso
 test("public build has only explicit assets and exact benchmark and preserved original bytes, with correct wrapped SRJ downloads", async () => {
   const output = await mkdtemp(resolve(tmpdir(), "srj34-site-test-"))
   try {
-    assert.equal((await buildSite(output)).sampleCount, 50)
-    assert.deepEqual((await readdir(output)).sort(), ["LICENSE", "app.mjs", "catalog.json", "corrections.json", "geometry.mjs", "index.html", "licenses", "manifest.json", "originals", "samples", "srj", "styles.css"])
+    assert.equal((await buildSite(output)).sampleCount, 51)
+    assert.deepEqual((await readdir(output)).sort(), ["LICENSE", "app.mjs", "catalog.json", "contributions.json", "corrections.json", "geometry.mjs", "index.html", "licenses", "manifest.json", "originals", "samples", "srj", "styles.css"])
+    assert.deepEqual(await readFile(resolve(output, "contributions.json")), await readFile(resolve(repositoryRoot, "contributions.json")))
+    assert.deepEqual(await readFile(resolve(output, "licenses/pedometer-MIT.txt")), await readFile(resolve(repositoryRoot, "licenses/pedometer-MIT.txt")))
     const catalog = JSON.parse(await readFile(resolve(output, "catalog.json"), "utf8"))
-    assert.equal(catalog.samples.length, 50)
-    assert.equal((await readdir(resolve(output, "samples"))).length, 50)
-    assert.equal((await readdir(resolve(output, "srj"))).length, 50)
+    assert.equal(catalog.samples.length, 51)
+    assert.equal((await readdir(resolve(output, "samples"))).length, 51)
+    assert.equal((await readdir(resolve(output, "srj"))).length, 51)
     for (const sample of catalog.samples) {
       const original = await readFile(resolve(output, sample.file))
       assert.equal(sha256(original), sample.sha256)
       if (sample.correction) {
         assert.equal(sha256(await readFile(resolve(output, sample.correction.originalFile))), sample.correction.originalSha256)
+      }
+      if (sample.category === "contributed-regression") {
+        assert.equal(sample.name, "pedometer")
+        assert.deepEqual(await readFile(resolve(output, sample.source.path)), original)
+        const sourceSample = manifest.samples.find(candidate => candidate.name === sample.name)
+        assert.deepEqual(sample.source, sourceSample.source)
+        assert.match(sample.source.url, /\/blob\/[a-f0-9]{40}\/originals\/pedometer\.json$/)
       }
       const expected = getSimpleRouteJson(JSON.parse(original), sample)
       const extracted = JSON.parse(await readFile(resolve(output, `.${sample.srjFile}`), "utf8"))
@@ -33,7 +42,7 @@ test("public build has only explicit assets and exact benchmark and preserved or
     assert.doesNotMatch(html, /privateHappy|\.vercel|dataset-happy-autorouter/)
   } finally { await rm(output, { recursive: true, force: true }) }
 })
-test("all 50 real inputs render finite SVG and preserve input-layer availability", async () => {
+test("all 51 real inputs render finite SVG and preserve input-layer availability", async () => {
   const layerCounts = new Map()
   for (const sample of manifest.samples) {
     const srj = await readSample(sample)
@@ -49,7 +58,7 @@ test("all 50 real inputs render finite SVG and preserve input-layer availability
   }
   assert.equal(layerCounts.get(1), 9)
   assert.equal(layerCounts.get(2), 34)
-  assert.equal(layerCounts.get(4), 7)
+  assert.equal(layerCounts.get(4), 8)
 })
 test("layer controls include multi-layer terminals and faithfully flip CCW geometry into SVG", () => {
   const srj = { layerCount: 4, minTraceWidth: .2, bounds: { minX:-3,maxX:3,minY:-3,maxY:3 }, obstacles:[{ type:"oval",center:{x:1,y:2},width:2,height:1,ccwRotationDegrees:90,layers:["top"],connectedTo:["pcb_smtpad_1"] }], connections:[{name:"net <script>alert(1)</script>",pointsToConnect:[{x:1,y:2,layers:["top","inner1","inner2","bottom"]}]}] }
