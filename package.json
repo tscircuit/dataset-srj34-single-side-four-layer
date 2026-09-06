@@ -1,0 +1,15 @@
+{
+  "name": "@tscircuit/dataset-happy-autorouter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "50 immutable top-component-only SRJ benchmark cases with source provenance",
+  "license": "MIT",
+  "exports": { ".": "./lib/dataset.mjs", "./manifest.json": "./manifest.json" },
+  "scripts": {
+    "test": "node scripts/filter.test.mjs && node scripts/validate.mjs",
+    "validate": "node scripts/validate.mjs",
+    "validate:upstream": "node scripts/validate.mjs --verify-remote",
+    "curate": "node scripts/curate.mjs"
+  }
+}

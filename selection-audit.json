@@ -1,0 +1,2108 @@
+{
+  "version": 1,
+  "decisions": [
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit001.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit001.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit001.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit001"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit002.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit002.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit002.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit002"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit003.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit003.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit003.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit004.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit004.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit004.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit005.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit005.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit005.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit005"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit006.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit006.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit006.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit006"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit007.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit007.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit007.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit007"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit010.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit010.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit010.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit010"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit011.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit011.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit011.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit011"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit012.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit012.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit012.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit012"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit013.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit013.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit013.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit013"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit014.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit014.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit014.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit014"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit015.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit015.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit015.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit015"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit018.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit018.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit018.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit019.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit019.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit019.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit019"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit020.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit020.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit020.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit021.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit021.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit021.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit021"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit100.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit100.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit100.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit101.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit101.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit101.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit102.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit102.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit102.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit103.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit103.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit103.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit104.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit104.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit104.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit105.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit105.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit105.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit106.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit106.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit106.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit107.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit107.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit107.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit108.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit108.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit108.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit109.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit109.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit109.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit110.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit110.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit110.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit111.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit111.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit111.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit112.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit112.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit112.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit113.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit113.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit113.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit114.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit114.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit114.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit115.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit115.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit115.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit115"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit116.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit116.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit116.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit118.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit118.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit118.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit119.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit119.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit119.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit120.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit120.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit120.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit121.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit121.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit121.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit123.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit123.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit123.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit124.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit124.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit124.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit125.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit125.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit125.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit126.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit126.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit126.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit127.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit127.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit127.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit128.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit128.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit128.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit129.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit129.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit129.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit131.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit131.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit131.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit131"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit132.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit132.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit132.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit133.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit133.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit133.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit133"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit134.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit134.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit134.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit135.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit135.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit135.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit135"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit136.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit136.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit136.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit136"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit137.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit137.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit137.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit138.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit138.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit138.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit139.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit139.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit139.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit139"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit140.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit140.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit140.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit141.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit141.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit141.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit142.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit142.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit142.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit143.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit143.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit143.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit144.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit144.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit144.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit145.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit145.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit145.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit146.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit146.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit146.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit147.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit147.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit147.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit147"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit148.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit148.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit148.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit149.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit149.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit149.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit150.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit150.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit150.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit150"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit151.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit151.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit151.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit152.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit152.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit152.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit155.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit155.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit155.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit156.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit156.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit156.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit157.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit157.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit157.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit158.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit158.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit158.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit162.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit162.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit162.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit164.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit164.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit164.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit165.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit165.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit165.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit168.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit168.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit168.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit172.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit172.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit172.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit173.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit173.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit173.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit174.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit174.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit174.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit175.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit175.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit175.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit176.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit176.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit176.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit177.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit177.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit177.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit178.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit178.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit178.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit179.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit179.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit179.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit179"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit180.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit180.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit180.simple-route.json",
+      "decision": "selected",
+      "sample": "dataset01-circuit180"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/autorouting-dataset-01",
+        "commit": "b97f5052a2359ab2da3f186765c6a5e839535efb",
+        "path": "lib/dataset/circuit181.simple-route.json",
+        "url": "https://github.com/tscircuit/autorouting-dataset-01/blob/b97f5052a2359ab2da3f186765c6a5e839535efb/lib/dataset/circuit181.simple-route.json",
+        "license": "MIT",
+        "dataset": "dataset01"
+      },
+      "path": "lib/dataset/circuit181.simple-route.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample001.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample001.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample001.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample002.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample002.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample002.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample003.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample003.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample003.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample004.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample004.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample004.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample005.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample005.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample005.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample006.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample006.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample006.json",
+      "decision": "excluded-unsupported-layer-count"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample007.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample007.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample007.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample008.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample008.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample008.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample009.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample009.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample009.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample010.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample010.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample010.json",
+      "decision": "selected",
+      "sample": "dataset-srj18-sample010"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample011.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample011.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample011.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample012.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample012.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample012.json",
+      "decision": "selected",
+      "sample": "dataset-srj18-sample012"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample013.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample013.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample013.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample014.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample014.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample014.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample015.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample015.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample015.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj18",
+        "commit": "c0aad90256a95256fcac814f9f7da81a82a2fdea",
+        "path": "samples/sample016.json",
+        "url": "https://github.com/tscircuit/dataset-srj18/blob/c0aad90256a95256fcac814f9f7da81a82a2fdea/samples/sample016.json",
+        "license": "Apache-2.0 (source board)",
+        "dataset": "dataset-srj18"
+      },
+      "path": "samples/sample016.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport01-be84eb/bugreport01-be84eb.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport01-be84eb/bugreport01-be84eb.json",
+        "license": "MIT",
+        "bugReportId": "be84eb3b-9bc5-468a-9153-867c0d1b951b"
+      },
+      "path": "fixtures/bug-reports/bugreport01-be84eb/bugreport01-be84eb.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport02-bc4361/bugreport02-bc4361.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport02-bc4361/bugreport02-bc4361.json",
+        "license": "MIT",
+        "bugReportId": "bc436135-963b-4878-9af3-1c3e41b15dd9"
+      },
+      "path": "fixtures/bug-reports/bugreport02-bc4361/bugreport02-bc4361.json",
+      "decision": "selected",
+      "sample": "bugreport02-bc4361"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport03-fe4a17/bugreport03-fe4a17.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport03-fe4a17/bugreport03-fe4a17.json",
+        "license": "MIT",
+        "bugReportId": "fe4a172b-07ce-4cd1-a6c7-69c5c05a24c9"
+      },
+      "path": "fixtures/bug-reports/bugreport03-fe4a17/bugreport03-fe4a17.json",
+      "decision": "selected",
+      "sample": "bugreport03-fe4a17"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport04-aa1d41/bugreport04-aa1d41.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport04-aa1d41/bugreport04-aa1d41.json",
+        "license": "MIT",
+        "bugReportId": "aa1d41d3-32f4-4a63-80c2-c5d9186d72cf"
+      },
+      "path": "fixtures/bug-reports/bugreport04-aa1d41/bugreport04-aa1d41.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport05-f03221/bugreport05-f03221.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport05-f03221/bugreport05-f03221.json",
+        "license": "MIT",
+        "bugReportId": "f03221db-9bc3-4fb1-b5bf-988fdb476477"
+      },
+      "path": "fixtures/bug-reports/bugreport05-f03221/bugreport05-f03221.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport07-d3f3be/bugreport07-d3f3be.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport07-d3f3be/bugreport07-d3f3be.json",
+        "license": "MIT",
+        "bugReportId": "d3f3be1b-1472-47ad-8868-0d9381b07e8b"
+      },
+      "path": "fixtures/bug-reports/bugreport07-d3f3be/bugreport07-d3f3be.json",
+      "decision": "selected",
+      "sample": "bugreport07-d3f3be"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport08-e3ec95/bugreport08-e3ec95.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport08-e3ec95/bugreport08-e3ec95.json",
+        "license": "MIT",
+        "bugReportId": "e3ec95c8-e4a0-4930-9c1f-7eeafd355a9e"
+      },
+      "path": "fixtures/bug-reports/bugreport08-e3ec95/bugreport08-e3ec95.json",
+      "decision": "selected",
+      "sample": "bugreport08-e3ec95"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport09-618e09/bugreport09-618e09.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport09-618e09/bugreport09-618e09.json",
+        "license": "MIT",
+        "bugReportId": "618e097b-b296-48e1-99d9-5b0123349ac7"
+      },
+      "path": "fixtures/bug-reports/bugreport09-618e09/bugreport09-618e09.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport10-71239a/bugreport10-71239a.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport10-71239a/bugreport10-71239a.json",
+        "license": "MIT",
+        "bugReportId": "71239a19-380e-47ad-a482-13fbe0bbbaca"
+      },
+      "path": "fixtures/bug-reports/bugreport10-71239a/bugreport10-71239a.json",
+      "decision": "selected",
+      "sample": "bugreport10-71239a"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport11-b2de3c/bugreport11-b2de3c.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport11-b2de3c/bugreport11-b2de3c.json",
+        "license": "MIT",
+        "bugReportId": "b2de3c59-a2b3-43ea-aeae-00c237d8aae3"
+      },
+      "path": "fixtures/bug-reports/bugreport11-b2de3c/bugreport11-b2de3c.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport12-35ce1c/bugreport12-35ce1c.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport12-35ce1c/bugreport12-35ce1c.json",
+        "license": "MIT",
+        "bugReportId": "35ce1c44-0000-0000-0000-000000000000"
+      },
+      "path": "fixtures/bug-reports/bugreport12-35ce1c/bugreport12-35ce1c.json",
+      "decision": "excluded-placeholder-report-id"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport13-b9a758/bugreport13-b9a758.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport13-b9a758/bugreport13-b9a758.json",
+        "license": "MIT",
+        "bugReportId": "b9a758f4-1dc2-4b22-8fb2-f7c75f6786fd"
+      },
+      "path": "fixtures/bug-reports/bugreport13-b9a758/bugreport13-b9a758.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport16-d95f38/bugreport16-d95f38.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport16-d95f38/bugreport16-d95f38.json",
+        "license": "MIT",
+        "bugReportId": "d95f3897-599c-4f1b-a35a-73342e6114fb"
+      },
+      "path": "fixtures/bug-reports/bugreport16-d95f38/bugreport16-d95f38.json",
+      "decision": "selected",
+      "sample": "bugreport16-d95f38"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport18-1b2d06/bugreport18-1b2d06.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport18-1b2d06/bugreport18-1b2d06.json",
+        "license": "MIT",
+        "bugReportId": "1b2d06c6-2714-4a78-bc86-32618e70a873"
+      },
+      "path": "fixtures/bug-reports/bugreport18-1b2d06/bugreport18-1b2d06.json",
+      "decision": "selected",
+      "sample": "bugreport18-1b2d06"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport24-05597c/bugreport24-05597c.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport24-05597c/bugreport24-05597c.json",
+        "license": "MIT",
+        "bugReportId": "05597cc6-6f0b-4c1c-9e00-40fcc9b884ce"
+      },
+      "path": "fixtures/bug-reports/bugreport24-05597c/bugreport24-05597c.json",
+      "decision": "selected",
+      "sample": "bugreport24-05597c"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport25-4b1d55/bugreport25-4b1d55.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport25-4b1d55/bugreport25-4b1d55.json",
+        "license": "MIT",
+        "bugReportId": "4b1d556d-db0b-4758-b15a-71a16ffd6400"
+      },
+      "path": "fixtures/bug-reports/bugreport25-4b1d55/bugreport25-4b1d55.json",
+      "decision": "selected",
+      "sample": "bugreport25-4b1d55"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport26-66b0b2/bugreport26-66b0b2.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport26-66b0b2/bugreport26-66b0b2.json",
+        "license": "MIT",
+        "bugReportId": "66b0b2c2-a7a3-43ca-9c37-c0431b000a71"
+      },
+      "path": "fixtures/bug-reports/bugreport26-66b0b2/bugreport26-66b0b2.json",
+      "decision": "selected",
+      "sample": "bugreport26-66b0b2"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport27-dd3734/bugreport27-dd3734.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport27-dd3734/bugreport27-dd3734.json",
+        "license": "MIT",
+        "bugReportId": "dd373411-5e44-46a1-b65b-eb840ffc0754"
+      },
+      "path": "fixtures/bug-reports/bugreport27-dd3734/bugreport27-dd3734.json",
+      "decision": "selected",
+      "sample": "bugreport27-dd3734"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport28-18a9ef/bugreport28-18a9ef.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport28-18a9ef/bugreport28-18a9ef.json",
+        "license": "MIT",
+        "bugReportId": "18a9efee-7660-4c48-8972-0fe42f5b3da0"
+      },
+      "path": "fixtures/bug-reports/bugreport28-18a9ef/bugreport28-18a9ef.json",
+      "decision": "selected",
+      "sample": "bugreport28-18a9ef"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport29-7deae8/bugreport29-7deae8.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport29-7deae8/bugreport29-7deae8.json",
+        "license": "MIT",
+        "bugReportId": "7deae870-e6c4-4fac-8bc8-875fac473a49"
+      },
+      "path": "fixtures/bug-reports/bugreport29-7deae8/bugreport29-7deae8.json",
+      "decision": "excluded-duplicate-board",
+      "boardGeometrySha256": "51838a2d315d654a473ad22980cd570a81e99de67972d138d1c3ab28b6f5b728"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport30-2174c8/bugreport30-2174c8.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport30-2174c8/bugreport30-2174c8.json",
+        "license": "MIT",
+        "bugReportId": "2174c8cc-20e5-4467-a296-f5fe0c25e0a7"
+      },
+      "path": "fixtures/bug-reports/bugreport30-2174c8/bugreport30-2174c8.json",
+      "decision": "selected",
+      "sample": "bugreport30-2174c8"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport33-213d45/bugreport33-213d45.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport33-213d45/bugreport33-213d45.json",
+        "license": "MIT",
+        "bugReportId": "213d450d-6b13-423f-937c-488d18994135"
+      },
+      "path": "fixtures/bug-reports/bugreport33-213d45/bugreport33-213d45.json",
+      "decision": "selected",
+      "sample": "bugreport33-213d45"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport34-e9dea2/bugreport34-e9dea2.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport34-e9dea2/bugreport34-e9dea2.json",
+        "license": "MIT",
+        "bugReportId": "e9dea27d-6dc6-4718-9d07-d4732e4cbf8e"
+      },
+      "path": "fixtures/bug-reports/bugreport34-e9dea2/bugreport34-e9dea2.json",
+      "decision": "selected",
+      "sample": "bugreport34-e9dea2"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport35-191db9/bugreport35-191db9.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport35-191db9/bugreport35-191db9.json",
+        "license": "MIT",
+        "bugReportId": "191db9a9-f8dc-4614-9fd7-d505e44b5666"
+      },
+      "path": "fixtures/bug-reports/bugreport35-191db9/bugreport35-191db9.json",
+      "decision": "selected",
+      "sample": "bugreport35-191db9"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport36-bf8303/bugreport36-bf8303.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport36-bf8303/bugreport36-bf8303.json",
+        "license": "MIT",
+        "bugReportId": "bf83038c-1d63-4683-9db1-3d1b55e3194c"
+      },
+      "path": "fixtures/bug-reports/bugreport36-bf8303/bugreport36-bf8303.json",
+      "decision": "selected",
+      "sample": "bugreport36-bf8303"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport36-d4c6c2/bugreport36-d4c6c2.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport36-d4c6c2/bugreport36-d4c6c2.json",
+        "license": "MIT",
+        "bugReportId": "d4c6c2f3-a0b6-46e1-a919-cdbe55388647"
+      },
+      "path": "fixtures/bug-reports/bugreport36-d4c6c2/bugreport36-d4c6c2.json",
+      "decision": "selected",
+      "sample": "bugreport36-d4c6c2"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport37-95e21b/bugreport37-95e21b.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport37-95e21b/bugreport37-95e21b.json",
+        "license": "MIT",
+        "bugReportId": "95e21b5a-aacd-4b45-b1bd-f32d2767e2d7"
+      },
+      "path": "fixtures/bug-reports/bugreport37-95e21b/bugreport37-95e21b.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport42-70db68/bugreport42-70db68.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport42-70db68/bugreport42-70db68.json",
+        "license": "MIT",
+        "bugReportId": "70db6824-7283-4cc1-82c8-9d0134549d4a"
+      },
+      "path": "fixtures/bug-reports/bugreport42-70db68/bugreport42-70db68.json",
+      "decision": "selected",
+      "sample": "bugreport42-70db68"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport43-e0f33a/bugreport43-e0f33a.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport43-e0f33a/bugreport43-e0f33a.json",
+        "license": "MIT",
+        "bugReportId": "e0f33a6b-b385-4fb8-970e-833332974d64"
+      },
+      "path": "fixtures/bug-reports/bugreport43-e0f33a/bugreport43-e0f33a.json",
+      "decision": "selected",
+      "sample": "bugreport43-e0f33a"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport44-0ec411/bugreport44-0ec411.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport44-0ec411/bugreport44-0ec411.json",
+        "license": "MIT",
+        "bugReportId": "0ec41138-a731-43e8-80c3-fe377c8e28a9"
+      },
+      "path": "fixtures/bug-reports/bugreport44-0ec411/bugreport44-0ec411.json",
+      "decision": "excluded-bottom-components"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport46-ac4337/bugreport46-ac4337-arduino-uno.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport46-ac4337/bugreport46-ac4337-arduino-uno.json",
+        "license": "MIT",
+        "bugReportId": "ac4337f8-5f23-49b6-9d24-52133b08020d"
+      },
+      "path": "fixtures/bug-reports/bugreport46-ac4337/bugreport46-ac4337-arduino-uno.json",
+      "decision": "selected",
+      "sample": "bugreport46-ac4337-arduino-uno"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport47-8ee80e-esp32-breakout/bugreport47-8ee80e-esp32-breakout.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport47-8ee80e-esp32-breakout/bugreport47-8ee80e-esp32-breakout.json",
+        "license": "MIT",
+        "bugReportId": "8ee80ec9-171e-49ce-9587-00e33729dac6"
+      },
+      "path": "fixtures/bug-reports/bugreport47-8ee80e-esp32-breakout/bugreport47-8ee80e-esp32-breakout.json",
+      "decision": "selected",
+      "sample": "bugreport47-8ee80e-esp32-breakout"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport48-569cfe/bugreport48-569cfe.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport48-569cfe/bugreport48-569cfe.json",
+        "license": "MIT",
+        "bugReportId": "569cfe9b-1c74-4e59-b360-32ccaacfb0be"
+      },
+      "path": "fixtures/bug-reports/bugreport48-569cfe/bugreport48-569cfe.json",
+      "decision": "selected",
+      "sample": "bugreport48-569cfe"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport49-8536f4/bugreport49-8536f4.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport49-8536f4/bugreport49-8536f4.json",
+        "license": "MIT",
+        "bugReportId": "8536f4a1-4741-455d-9415-2f9431342214"
+      },
+      "path": "fixtures/bug-reports/bugreport49-8536f4/bugreport49-8536f4.json",
+      "decision": "selected",
+      "sample": "bugreport49-8536f4"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport50-e1c376/bugreport50-e1c376.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport50-e1c376/bugreport50-e1c376.json",
+        "license": "MIT",
+        "bugReportId": "e1c37669-bb7a-481c-9c45-3eeda0ee08ae"
+      },
+      "path": "fixtures/bug-reports/bugreport50-e1c376/bugreport50-e1c376.json",
+      "decision": "selected",
+      "sample": "bugreport50-e1c376"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport51-7db9f8/bugreport51-7db9f8.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport51-7db9f8/bugreport51-7db9f8.json",
+        "license": "MIT",
+        "bugReportId": "7db9f81b-2efe-48bd-8763-766c0e9d9bf0"
+      },
+      "path": "fixtures/bug-reports/bugreport51-7db9f8/bugreport51-7db9f8.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport52-a9573e/bugreport52-a9573e.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport52-a9573e/bugreport52-a9573e.json",
+        "license": "MIT",
+        "bugReportId": "a9573e79-1760-4839-a30a-6aff8c5fec85"
+      },
+      "path": "fixtures/bug-reports/bugreport52-a9573e/bugreport52-a9573e.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport53-8e0eba/bugreport53-8e0eba.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport53-8e0eba/bugreport53-8e0eba.json",
+        "license": "MIT",
+        "bugReportId": "8e0ebab0-9e35-440d-8ef1-04e28afad436"
+      },
+      "path": "fixtures/bug-reports/bugreport53-8e0eba/bugreport53-8e0eba.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport54-3a54af/bugreport54-3a54af.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport54-3a54af/bugreport54-3a54af.json",
+        "license": "MIT",
+        "bugReportId": "3a54afd0-1e10-4348-9e98-6346cec0f6bf"
+      },
+      "path": "fixtures/bug-reports/bugreport54-3a54af/bugreport54-3a54af.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport55-b7c349/bugreport55-b7c349.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport55-b7c349/bugreport55-b7c349.json",
+        "license": "MIT",
+        "bugReportId": "b7c3499b-7662-4fa9-85b8-502ad456ca1c"
+      },
+      "path": "fixtures/bug-reports/bugreport55-b7c349/bugreport55-b7c349.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport56-44d3c9/bugreport56-44d3c9.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport56-44d3c9/bugreport56-44d3c9.json",
+        "license": "MIT",
+        "bugReportId": "44d3c953-cdea-4d3b-9698-3fd69edad73c"
+      },
+      "path": "fixtures/bug-reports/bugreport56-44d3c9/bugreport56-44d3c9.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport57-51db46/bugreport57-51db46.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport57-51db46/bugreport57-51db46.json",
+        "license": "MIT",
+        "bugReportId": "51db4614-1840-499d-9c02-0b80eb6de64f"
+      },
+      "path": "fixtures/bug-reports/bugreport57-51db46/bugreport57-51db46.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport58-b69d72/bugreport58-b69d72.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport58-b69d72/bugreport58-b69d72.json",
+        "license": "MIT",
+        "bugReportId": "b69d72af-497e-49c0-a9e0-2a7ef3defa04"
+      },
+      "path": "fixtures/bug-reports/bugreport58-b69d72/bugreport58-b69d72.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport59-82431e/bugreport59-82431e.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport59-82431e/bugreport59-82431e.json",
+        "license": "MIT",
+        "bugReportId": "82431ede-f57f-4075-a6e0-50b3a9db027a"
+      },
+      "path": "fixtures/bug-reports/bugreport59-82431e/bugreport59-82431e.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport60-fe53a2/bugreport60-fe53a2.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport60-fe53a2/bugreport60-fe53a2.json",
+        "license": "MIT",
+        "bugReportId": "fe53a2d0-7905-409d-bd47-b8736a0cf3b7"
+      },
+      "path": "fixtures/bug-reports/bugreport60-fe53a2/bugreport60-fe53a2.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport61-2936e1/bugreport61-2936e1.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport61-2936e1/bugreport61-2936e1.json",
+        "license": "MIT",
+        "bugReportId": "2936e12e-a609-4090-9619-9d7d20820b46"
+      },
+      "path": "fixtures/bug-reports/bugreport61-2936e1/bugreport61-2936e1.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport62-0f6ca4/bugreport62-0f6ca4.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport62-0f6ca4/bugreport62-0f6ca4.json",
+        "license": "MIT",
+        "bugReportId": "0f6ca4b3-52d3-46b4-baa6-e4789e57f613"
+      },
+      "path": "fixtures/bug-reports/bugreport62-0f6ca4/bugreport62-0f6ca4.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport63-274be2/bugreport63-274be2.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport63-274be2/bugreport63-274be2.json",
+        "license": "MIT",
+        "bugReportId": "274be2d8-788b-48d9-80e6-87e43d187515"
+      },
+      "path": "fixtures/bug-reports/bugreport63-274be2/bugreport63-274be2.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport64-be7d8f/bugreport64-be7d8f.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport64-be7d8f/bugreport64-be7d8f.json",
+        "license": "MIT",
+        "bugReportId": "be7d8f59-eec7-4be7-92a3-d72a247fd7ea"
+      },
+      "path": "fixtures/bug-reports/bugreport64-be7d8f/bugreport64-be7d8f.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport66-e6c7e0/bugreport66-e6c7e0.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport66-e6c7e0/bugreport66-e6c7e0.json",
+        "license": "MIT",
+        "bugReportId": "7954acc4-0f13-4ad1-aed6-1a040d149a45"
+      },
+      "path": "fixtures/bug-reports/bugreport66-e6c7e0/bugreport66-e6c7e0.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport67-a0cb81/bugreport67-a0cb81.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport67-a0cb81/bugreport67-a0cb81.json",
+        "license": "MIT",
+        "bugReportId": "a0cb81f2-2992-4083-8e78-13f7eceda4dc"
+      },
+      "path": "fixtures/bug-reports/bugreport67-a0cb81/bugreport67-a0cb81.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport68-41562e/bugreport68-41562e.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport68-41562e/bugreport68-41562e.json",
+        "license": "MIT",
+        "bugReportId": "41562efa-d8e4-41db-903f-e7ebed25d782"
+      },
+      "path": "fixtures/bug-reports/bugreport68-41562e/bugreport68-41562e.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport71-dd7d15/bugreport71-dd7d15.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport71-dd7d15/bugreport71-dd7d15.json",
+        "license": "MIT",
+        "bugReportId": "dd7d1506-2802-4975-8643-871d24b7a2b6"
+      },
+      "path": "fixtures/bug-reports/bugreport71-dd7d15/bugreport71-dd7d15.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport76-373c24/bugreport76-373c24.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport76-373c24/bugreport76-373c24.json",
+        "license": "MIT",
+        "bugReportId": "373c2447-1a1f-4703-bf79-36855faeaf44"
+      },
+      "path": "fixtures/bug-reports/bugreport76-373c24/bugreport76-373c24.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport77-07f6a7/bugreport77-07f6a7.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport77-07f6a7/bugreport77-07f6a7.json",
+        "license": "MIT",
+        "bugReportId": "07f6a719-0729-4196-935f-db4b9740dbf2"
+      },
+      "path": "fixtures/bug-reports/bugreport77-07f6a7/bugreport77-07f6a7.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport78-dfeaaf/bugreport78-dfeaaf.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport78-dfeaaf/bugreport78-dfeaaf.json",
+        "license": "MIT",
+        "bugReportId": "dfeaafbb-a176-4a5f-90a5-ac01f3842801"
+      },
+      "path": "fixtures/bug-reports/bugreport78-dfeaaf/bugreport78-dfeaaf.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport80-75ab58/bugreport80-75ab58.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport80-75ab58/bugreport80-75ab58.json",
+        "license": "MIT",
+        "bugReportId": "75ab5802-db32-4c4b-b004-d7bc652937b8"
+      },
+      "path": "fixtures/bug-reports/bugreport80-75ab58/bugreport80-75ab58.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport81-6b40e7/bugreport81-6b40e7.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport81-6b40e7/bugreport81-6b40e7.json",
+        "license": "MIT",
+        "bugReportId": "6b40e7ff-5aeb-46da-8e8a-0a2536ced44c"
+      },
+      "path": "fixtures/bug-reports/bugreport81-6b40e7/bugreport81-6b40e7.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport82-0e99ec/bugreport82-0e99ec.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport82-0e99ec/bugreport82-0e99ec.json",
+        "license": "MIT",
+        "bugReportId": "0e99ec17-2151-477a-a014-ace7f1037998"
+      },
+      "path": "fixtures/bug-reports/bugreport82-0e99ec/bugreport82-0e99ec.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport84-726193/bugreport84-726193.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport84-726193/bugreport84-726193.json",
+        "license": "MIT",
+        "bugReportId": "72619356-cfec-4db8-8b37-66ccdc7a59bc"
+      },
+      "path": "fixtures/bug-reports/bugreport84-726193/bugreport84-726193.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport86-40bf8e/bugreport86-40bf8e.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport86-40bf8e/bugreport86-40bf8e.json",
+        "license": "MIT",
+        "bugReportId": "40bf8e8c-5c86-4cd4-85a2-e022ecd8ee5a"
+      },
+      "path": "fixtures/bug-reports/bugreport86-40bf8e/bugreport86-40bf8e.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport87-76a6de/bugreport87-76a6de.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport87-76a6de/bugreport87-76a6de.json",
+        "license": "MIT",
+        "bugReportId": "76a6de9f-6255-4cf2-ab9d-b8b0201033fc"
+      },
+      "path": "fixtures/bug-reports/bugreport87-76a6de/bugreport87-76a6de.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport88-9a86ed/bugreport88-9a86ed.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport88-9a86ed/bugreport88-9a86ed.json",
+        "license": "MIT",
+        "bugReportId": "9a86eddd-7ec5-4b09-a113-22a025e8a306"
+      },
+      "path": "fixtures/bug-reports/bugreport88-9a86ed/bugreport88-9a86ed.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport89-f8bab9/bugreport89-f8bab9.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport89-f8bab9/bugreport89-f8bab9.json",
+        "license": "MIT",
+        "bugReportId": "f8bab902-8108-472b-aa0b-a125a5c131f4"
+      },
+      "path": "fixtures/bug-reports/bugreport89-f8bab9/bugreport89-f8bab9.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport90-6dc620/bugreport90-6dc620.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport90-6dc620/bugreport90-6dc620.json",
+        "license": "MIT",
+        "bugReportId": "6dc6205a-aafb-42b7-a25f-5777a8d3edb1"
+      },
+      "path": "fixtures/bug-reports/bugreport90-6dc620/bugreport90-6dc620.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport91-1046bd/bugreport91-1046bd.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport91-1046bd/bugreport91-1046bd.json",
+        "license": "MIT",
+        "bugReportId": "1046bd7a-83a1-4867-925f-2c58e0198196"
+      },
+      "path": "fixtures/bug-reports/bugreport91-1046bd/bugreport91-1046bd.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport92-951dfd/bugreport92-951dfd.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport92-951dfd/bugreport92-951dfd.json",
+        "license": "MIT",
+        "bugReportId": "951dfd6d-b6ae-4440-9745-e1c12433797c"
+      },
+      "path": "fixtures/bug-reports/bugreport92-951dfd/bugreport92-951dfd.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport94-56fa2e/bugreport94-56fa2e.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport94-56fa2e/bugreport94-56fa2e.json",
+        "license": "MIT",
+        "bugReportId": "56fa2ec8-23e8-4f28-9953-9882e64393e3"
+      },
+      "path": "fixtures/bug-reports/bugreport94-56fa2e/bugreport94-56fa2e.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/bugreport-b5b3b9d8/bugreport-b5b3b9d8.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/bugreport-b5b3b9d8/bugreport-b5b3b9d8.json",
+        "license": "MIT",
+        "bugReportId": "b5b3b9d8-1af2-4052-a788-e848ca93bdb1"
+      },
+      "path": "fixtures/bug-reports/bugreport-b5b3b9d8/bugreport-b5b3b9d8.json",
+      "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+        "commit": "fb6c6d77c091a56c9e1d4648bbac40a7cccd0def",
+        "path": "fixtures/bug-reports/simplification-trace-overlap-repro/simplification-trace-overlap-repro.json",
+        "url": "https://github.com/tscircuit/tscircuit-autorouter/blob/fb6c6d77c091a56c9e1d4648bbac40a7cccd0def/fixtures/bug-reports/simplification-trace-overlap-repro/simplification-trace-overlap-repro.json",
+        "license": "MIT",
+        "bugReportId": "1f3b6988-28c2-4475-b908-7cfc7c759a7d"
+      },
+      "path": "fixtures/bug-reports/simplification-trace-overlap-repro/simplification-trace-overlap-repro.json",
+      "decision": "not-selected-quota-reached"
+    }
+  ]
+}

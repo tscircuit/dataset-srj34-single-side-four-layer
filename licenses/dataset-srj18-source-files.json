@@ -1,0 +1,274 @@
+[
+  {
+    "sample": "sample001",
+    "board": "Arduino Leonardo",
+    "repository": "sabogalc/KiCad-Arduino-Boards",
+    "ref": "main",
+    "kicadPcb": "KiCad Projects/Arduino Leonardo/Arduino Leonardo.kicad_pcb",
+    "sourceUrl": "https://github.com/sabogalc/KiCad-Arduino-Boards/blob/main/KiCad%20Projects/Arduino%20Leonardo/Arduino%20Leonardo.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/sabogalc/KiCad-Arduino-Boards/main/KiCad%20Projects/Arduino%20Leonardo/Arduino%20Leonardo.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "pads": 274,
+      "components": 57,
+      "traces": 251,
+      "vias": 95,
+      "copper_pours": 17
+    }
+  },
+  {
+    "sample": "sample002",
+    "board": "Arduino Mega 2560",
+    "repository": "sabogalc/KiCad-Arduino-Boards",
+    "ref": "main",
+    "kicadPcb": "KiCad Projects/Arduino Mega 2560/Arduino Mega 2560.kicad_pcb",
+    "sourceUrl": "https://github.com/sabogalc/KiCad-Arduino-Boards/blob/main/KiCad%20Projects/Arduino%20Mega%202560/Arduino%20Mega%202560.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/sabogalc/KiCad-Arduino-Boards/main/KiCad%20Projects/Arduino%20Mega%202560/Arduino%20Mega%202560.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "pads": 404,
+      "components": 66,
+      "traces": 386,
+      "vias": 154,
+      "copper_pours": 25
+    }
+  },
+  {
+    "sample": "sample003",
+    "board": "Arduino Micro",
+    "repository": "sabogalc/KiCad-Arduino-Boards",
+    "ref": "main",
+    "kicadPcb": "KiCad Projects/Arduino Micro/Arduino Micro.kicad_pcb",
+    "sourceUrl": "https://github.com/sabogalc/KiCad-Arduino-Boards/blob/main/KiCad%20Projects/Arduino%20Micro/Arduino%20Micro.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/sabogalc/KiCad-Arduino-Boards/main/KiCad%20Projects/Arduino%20Micro/Arduino%20Micro.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "pads": 158,
+      "components": 48,
+      "traces": 160,
+      "vias": 44,
+      "copper_pours": 21
+    }
+  },
+  {
+    "sample": "sample004",
+    "board": "Arduino Nano",
+    "repository": "sabogalc/KiCad-Arduino-Boards",
+    "ref": "main",
+    "kicadPcb": "KiCad Projects/Arduino Nano/Arduino Nano.kicad_pcb",
+    "sourceUrl": "https://github.com/sabogalc/KiCad-Arduino-Boards/blob/main/KiCad%20Projects/Arduino%20Nano/Arduino%20Nano.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/sabogalc/KiCad-Arduino-Boards/main/KiCad%20Projects/Arduino%20Nano/Arduino%20Nano.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "pads": 146,
+      "components": 34,
+      "traces": 162,
+      "vias": 44,
+      "copper_pours": 18
+    }
+  },
+  {
+    "sample": "sample005",
+    "board": "Arduino Uno",
+    "repository": "sabogalc/KiCad-Arduino-Boards",
+    "ref": "main",
+    "kicadPcb": "KiCad Projects/Uno/Arduino Uno/Arduino UNO.kicad_pcb",
+    "sourceUrl": "https://github.com/sabogalc/KiCad-Arduino-Boards/blob/main/KiCad%20Projects/Uno/Arduino%20Uno/Arduino%20UNO.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/sabogalc/KiCad-Arduino-Boards/main/KiCad%20Projects/Uno/Arduino%20Uno/Arduino%20UNO.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "pads": 259,
+      "components": 56,
+      "traces": 268,
+      "vias": 75,
+      "copper_pours": 23
+    }
+  },
+  {
+    "sample": "sample006",
+    "board": "DDR5_TESTBED",
+    "repository": "antmicro/ddr5-testbed",
+    "ref": "main",
+    "kicadPcb": "ddr5-testbed.kicad_pcb",
+    "sourceUrl": "https://github.com/antmicro/ddr5-testbed/blob/main/ddr5-testbed.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/antmicro/ddr5-testbed/main/ddr5-testbed.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "components": 65,
+      "pads": 473,
+      "traces": 468,
+      "vias": 180,
+      "copper_pours": 14
+    }
+  },
+  {
+    "sample": "sample007",
+    "board": "DUAL_GMSL_SERIALIZER_ADAPTER",
+    "repository": "antmicro/dual-gmsl-serializer-adapter",
+    "ref": "main",
+    "kicadPcb": "dual-camera-to-gmsl-serializer-csi-adapter.kicad_pcb",
+    "sourceUrl": "https://github.com/antmicro/dual-gmsl-serializer-adapter/blob/main/dual-camera-to-gmsl-serializer-csi-adapter.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/antmicro/dual-gmsl-serializer-adapter/main/dual-camera-to-gmsl-serializer-csi-adapter.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "components": 129,
+      "pads": 390,
+      "traces": 397,
+      "vias": 289,
+      "copper_pours": 69
+    }
+  },
+  {
+    "sample": "sample008",
+    "board": "FTDI_TOOLKIT",
+    "repository": "antmicro/ftdi-toolkit",
+    "ref": "main",
+    "kicadPcb": "debug-toolkit.kicad_pcb",
+    "sourceUrl": "https://github.com/antmicro/ftdi-toolkit/blob/main/debug-toolkit.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/antmicro/ftdi-toolkit/main/debug-toolkit.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "pads": 475,
+      "components": 130,
+      "traces": 511,
+      "vias": 173,
+      "copper_pours": 13
+    }
+  },
+  {
+    "sample": "sample009",
+    "board": "GMSL_SERIALIZER",
+    "repository": "antmicro/gmsl-serializer",
+    "ref": "main",
+    "kicadPcb": "gmsl-serializer.kicad_pcb",
+    "sourceUrl": "https://github.com/antmicro/gmsl-serializer/blob/main/gmsl-serializer.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/antmicro/gmsl-serializer/main/gmsl-serializer.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "pads": 280,
+      "components": 118,
+      "traces": 335,
+      "vias": 206,
+      "copper_pours": 33
+    }
+  },
+  {
+    "sample": "sample010",
+    "board": "HDMI_EDID_DEBUG_BOARD",
+    "repository": "antmicro/hdmi-edid-debug-board",
+    "ref": "main",
+    "kicadPcb": "hdmi-edid-debug-board.kicad_pcb",
+    "sourceUrl": "https://github.com/antmicro/hdmi-edid-debug-board/blob/main/hdmi-edid-debug-board.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/antmicro/hdmi-edid-debug-board/main/hdmi-edid-debug-board.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "pads": 409,
+      "components": 110,
+      "traces": 460,
+      "vias": 175,
+      "copper_pours": 10
+    }
+  },
+  {
+    "sample": "sample011",
+    "board": "JOB_OCULINK_EXPANSION",
+    "repository": "antmicro/job-oculink-expansion",
+    "ref": "main",
+    "kicadPcb": "jetson-orin-baseboard-oculink-expansion.kicad_pcb",
+    "sourceUrl": "https://github.com/antmicro/job-oculink-expansion/blob/main/jetson-orin-baseboard-oculink-expansion.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/antmicro/job-oculink-expansion/main/jetson-orin-baseboard-oculink-expansion.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "pads": 430,
+      "components": 119,
+      "traces": 401,
+      "vias": 219,
+      "copper_pours": 65
+    }
+  },
+  {
+    "sample": "sample012",
+    "board": "OCULINK_PCIE_ADAPTER",
+    "repository": "antmicro/oculink-pcie-adapter",
+    "ref": "main",
+    "kicadPcb": "oculink-to-pcie-adapter.kicad_pcb",
+    "sourceUrl": "https://github.com/antmicro/oculink-pcie-adapter/blob/main/oculink-to-pcie-adapter.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/antmicro/oculink-pcie-adapter/main/oculink-to-pcie-adapter.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "pads": 714,
+      "components": 165,
+      "traces": 687,
+      "vias": 583,
+      "copper_pours": 34
+    }
+  },
+  {
+    "sample": "sample013",
+    "board": "OV5640_DUAL_CAMERA_BOARD",
+    "repository": "antmicro/ov5640-dual-camera-board",
+    "ref": "main",
+    "kicadPcb": "OV5640-dual-camera-board.kicad_pcb",
+    "sourceUrl": "https://github.com/antmicro/ov5640-dual-camera-board/blob/main/OV5640-dual-camera-board.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/antmicro/ov5640-dual-camera-board/main/OV5640-dual-camera-board.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "pads": 372,
+      "components": 92,
+      "traces": 396,
+      "vias": 234,
+      "copper_pours": 44
+    }
+  },
+  {
+    "sample": "sample014",
+    "board": "OV9281_CAMERA_BOARD",
+    "repository": "antmicro/ov9281-camera-board",
+    "ref": "main",
+    "kicadPcb": "ov9281-dual-camera-board.kicad_pcb",
+    "sourceUrl": "https://github.com/antmicro/ov9281-camera-board/blob/main/ov9281-dual-camera-board.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/antmicro/ov9281-camera-board/main/ov9281-dual-camera-board.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "pads": 365,
+      "components": 82,
+      "traces": 383,
+      "vias": 233,
+      "copper_pours": 13
+    }
+  },
+  {
+    "sample": "sample015",
+    "board": "SDI_FIBER_ADAPTER",
+    "repository": "antmicro/sdi-fiber-adapter",
+    "ref": "main",
+    "kicadPcb": "sdi-fiber-adapter.kicad_pcb",
+    "sourceUrl": "https://github.com/antmicro/sdi-fiber-adapter/blob/main/sdi-fiber-adapter.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/antmicro/sdi-fiber-adapter/main/sdi-fiber-adapter.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "pads": 596,
+      "components": 212,
+      "traces": 602,
+      "vias": 268,
+      "copper_pours": 53
+    }
+  },
+  {
+    "sample": "sample016",
+    "board": "USB_C_POWER_ADAPTER",
+    "repository": "antmicro/usb-c-power-adapter",
+    "ref": "main",
+    "kicadPcb": "usb-c-power-adapter.kicad_pcb",
+    "sourceUrl": "https://github.com/antmicro/usb-c-power-adapter/blob/main/usb-c-power-adapter.kicad_pcb",
+    "rawUrl": "https://raw.githubusercontent.com/antmicro/usb-c-power-adapter/main/usb-c-power-adapter.kicad_pcb",
+    "warnings": [],
+    "stats": {
+      "pads": 344,
+      "components": 124,
+      "traces": 317,
+      "vias": 229,
+      "copper_pours": 42
+    }
+  }
+]
