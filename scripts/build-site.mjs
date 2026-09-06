@@ -7,15 +7,16 @@ import { getSimpleRouteJson, repositoryRoot, sha256 } from "../lib/dataset.mjs"
 export async function buildSite(output = resolve(repositoryRoot, "dist")) {
   const manifestBytes = await readFile(resolve(repositoryRoot, "manifest.json"))
   const manifest = JSON.parse(manifestBytes.toString())
-  if (manifest.samples.length !== 50) throw new Error("Expected exactly 50 samples")
+  if (manifest.samples.length !== 51) throw new Error("Expected exactly 51 samples")
   await rm(output, { recursive: true, force: true })
   await mkdir(resolve(output, "samples"), { recursive: true })
   await mkdir(resolve(output, "srj"), { recursive: true })
   for (const asset of ["index.html", "styles.css", "app.mjs", "geometry.mjs"]) await copyFile(resolve(repositoryRoot, "site", asset), resolve(output, asset))
   await mkdir(resolve(output, "licenses"), { recursive: true })
-  for (const notice of ["LICENSE", "licenses/README.md", "licenses/dataset01-MIT.txt", "licenses/tscircuit-autorouter-MIT.txt", "licenses/oculink-pcie-adapter-Apache-2.0.txt", "licenses/hdmi-edid-debug-board-Apache-2.0.txt", "licenses/dataset-srj18-source-files.json"]) await copyFile(resolve(repositoryRoot, notice), resolve(output, notice))
+  for (const notice of ["LICENSE", "licenses/README.md", "licenses/dataset01-MIT.txt", "licenses/tscircuit-autorouter-MIT.txt", "licenses/oculink-pcie-adapter-Apache-2.0.txt", "licenses/hdmi-edid-debug-board-Apache-2.0.txt", "licenses/dataset-srj18-source-files.json", "licenses/pedometer-MIT.txt"]) await copyFile(resolve(repositoryRoot, notice), resolve(output, notice))
   await writeFile(resolve(output, "manifest.json"), manifestBytes)
   await copyFile(resolve(repositoryRoot, "corrections.json"), resolve(output, "corrections.json"))
+  await copyFile(resolve(repositoryRoot, "contributions.json"), resolve(output, "contributions.json"))
   await mkdir(resolve(output, "originals"), { recursive: true })
   const samples = []
   for (const sample of manifest.samples) {
@@ -27,6 +28,13 @@ export async function buildSite(output = resolve(repositoryRoot, "dist")) {
       if (!/^originals\/[a-zA-Z0-9_-]+\.json$/.test(originalFile)) throw new Error("Unsafe original path")
       const original = await readFile(resolve(repositoryRoot, originalFile))
       if (sha256(original) !== originalSha256) throw new Error(`Original checksum mismatch: ${sample.name}`)
+      await writeFile(resolve(output, originalFile), original)
+    }
+    if (sample.category === "contributed-regression") {
+      const originalFile = sample.source.path
+      if (!/^originals\/[a-zA-Z0-9_-]+\.json$/.test(originalFile)) throw new Error("Unsafe contributed original path")
+      const original = await readFile(resolve(repositoryRoot, originalFile))
+      if (sha256(original) !== sample.sha256) throw new Error(`Contributed original checksum mismatch: ${sample.name}`)
       await writeFile(resolve(output, originalFile), original)
     }
     const srj = getSimpleRouteJson(JSON.parse(bytes.toString()), sample)

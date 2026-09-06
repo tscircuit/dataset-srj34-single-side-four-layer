@@ -11,9 +11,19 @@ const corrections = new Map(correctionRegistry.corrections.map(({ sample, ...cor
 assert.equal(corrections.size, correctionRegistry.corrections.length, "Duplicate correction records")
 const manifest = JSON.parse(await readFile(resolve(repositoryRoot, "manifest.json"), "utf8"))
 assert.equal(manifest.version, 1)
-assert.equal(manifest.samples.length, 50, "The curated dataset must contain exactly 50 samples")
+assert.equal(manifest.samples.length, 51, "The curated dataset must contain exactly 51 samples")
+assert.equal(sha256(canonicalize(manifest.samples.slice(0, 50))), "e6461502d1281c56e6f884f7ba0c613e1aa81d93f47f19d99427816708132c49", "The original 50 sample records and their order must remain unchanged")
+assert.equal(manifest.samples[50].name, "pedometer")
+assert.equal(manifest.selection.contributedRegressionCount, 1)
+const contributionRegistry = JSON.parse(await readFile(resolve(repositoryRoot, "contributions.json"), "utf8"))
+assert.equal(contributionRegistry.version, 1)
+assert.equal(contributionRegistry.samples.length, 1)
+const contributions = new Map(contributionRegistry.samples.map(sample => [sample.name, sample]))
+assert.equal(contributions.size, contributionRegistry.samples.length, "Duplicate contributed sample records")
+assert.deepEqual([...contributions.keys()], ["pedometer"])
 assert.equal(manifest.samples.filter(sample => sample.category === "legacy-dataset").length, 25)
 assert.equal(manifest.samples.filter(sample => sample.category === "bug-report").length, 25)
+assert.equal(manifest.samples.filter(sample => sample.category === "contributed-regression").length, 1)
 const names = new Set(), contents = new Set(), layouts = new Set()
 for (const sample of manifest.samples) {
   assert(!names.has(sample.name), `Duplicate sample name: ${sample.name}`)
@@ -22,6 +32,24 @@ for (const sample of manifest.samples) {
   assert.match(sample.sha256, /^[a-f0-9]{64}$/)
   assert.match(sample.source.commit, /^[a-f0-9]{40}$/)
   assert.equal(sample.source.url, `${sample.source.repository}/blob/${sample.source.commit}/${sample.source.path}`)
+  const contribution = contributions.get(sample.name)
+  if (sample.category === "contributed-regression") {
+    assert(contribution, `${sample.name}: contributed source is absent from registry`)
+    const { canonicalSrjSha256, boardGeometrySha256: geometryHash, layerCount, connectionCount, terminalCount, obstacleCount, ...candidate } = sample
+    assert.deepEqual(candidate, contribution, `${sample.name}: contributed provenance differs from registry`)
+    assert.equal(sample.name, "pedometer")
+    assert.equal(sample.file, "samples/pedometer.json")
+    assert.equal(sample.srjJsonPointer, "")
+    assert.equal(sample.source.repository, manifest.repository)
+    assert.equal(sample.source.path, "originals/pedometer.json")
+    assert.equal(sample.source.dataset, "pedometer")
+    assert.equal(sample.source.license, "MIT")
+    assert(sample.source.attribution?.trim().length > 0, "Contributed source requires attribution")
+    assert.equal(sample.correction, undefined, "The contributed regression must preserve its exact input")
+    const original = await readFile(resolve(repositoryRoot, sample.source.path))
+    assert.equal(sha256(original), sample.sha256, `${sample.name}: contributed original checksum mismatch`)
+    assert.deepEqual(await readFile(resolve(repositoryRoot, sample.file)), original, `${sample.name}: contributed input differs from its preserved original`)
+  } else assert.equal(contribution, undefined, `${sample.name}: unexpected contributed source category`)
   const correction = corrections.get(sample.name)
   assert.deepEqual(sample.correction, correction, `${sample.name}: correction provenance differs from registry`)
   if (correction) {
@@ -56,7 +84,10 @@ for (const sample of manifest.samples) {
   }
 }
 assert([...corrections.keys()].every(name => names.has(name)), "Correction references an unlisted sample")
-assert.deepEqual((await readdir(resolve(repositoryRoot, "originals"))).sort(), [...corrections.values()].map(correction => correction.originalFile.slice("originals/".length)).sort(), "Unlisted original files are forbidden")
+assert.deepEqual((await readdir(resolve(repositoryRoot, "originals"))).sort(), [
+  ...[...corrections.values()].map(correction => correction.originalFile.slice("originals/".length)),
+  ...[...contributions.values()].map(sample => sample.source.path.slice("originals/".length)),
+].sort(), "Unlisted original files are forbidden")
 const files = await readdir(resolve(repositoryRoot, "samples"))
 assert.deepEqual(files.sort(), manifest.samples.map(sample => sample.file.slice("samples/".length)).sort(), "Unlisted sample files are forbidden")
 if (process.argv.includes("--verify-remote")) {
@@ -70,4 +101,4 @@ if (process.argv.includes("--verify-remote")) {
     }))
   }
 }
-console.log(`Verified 50 unique top-only inputs: 25 dataset inputs + 25 genuine bug reports; ${corrections.size} declared source correction(s)${process.argv.includes("--verify-remote") ? "; all upstream bytes match" : ""}.`)
+console.log(`Verified 51 unique top-only inputs: 25 dataset inputs + 25 genuine bug reports + 1 contributed regression; ${corrections.size} declared source correction(s)${process.argv.includes("--verify-remote") ? "; all upstream bytes match" : ""}.`)

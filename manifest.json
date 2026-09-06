@@ -5,9 +5,10 @@
   "selection": {
     "legacyCount": 25,
     "bugReportCount": 25,
-    "policy": "All unique eligible inputs from pinned dataset01/dataset-srj18; then first 25 unique eligible genuine wrapped bug reports in numeric fixture order. Selection never invokes any router.",
+    "policy": "All unique eligible inputs from pinned dataset01/dataset-srj18; then first 25 unique eligible genuine wrapped bug reports in numeric fixture order. Selection never invokes any router. Append explicitly contributed regression inputs in contributions.json order, retaining their original bytes and applying the same eligibility and duplicate checks.",
     "duplicatePolicy": "Canonical SRJ hash plus conservative board geometry hash: sorted obstacle layout and bounds rounded to 0.00001 mm, ignoring IDs and existing routes.",
-    "bottomPolicy": "Exclude bottom SMT pads and bottom-only terminals without plated-hole or same-net existing-copper evidence; retain PTH and bottom routing copper."
+    "bottomPolicy": "Exclude bottom SMT pads and bottom-only terminals without plated-hole or same-net existing-copper evidence; retain PTH and bottom routing copper.",
+    "contributedRegressionCount": 1
   },
   "samples": [
     {
@@ -1073,6 +1074,28 @@
       "connectionCount": 168,
       "terminalCount": 490,
       "obstacleCount": 458
+    },
+    {
+      "name": "pedometer",
+      "file": "samples/pedometer.json",
+      "category": "contributed-regression",
+      "srjJsonPointer": "",
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj34-single-side-four-layer",
+        "commit": "b07fa8a96acc6cf097b14de128f76ee5acf866d0",
+        "path": "originals/pedometer.json",
+        "url": "https://github.com/tscircuit/dataset-srj34-single-side-four-layer/blob/b07fa8a96acc6cf097b14de128f76ee5acf866d0/originals/pedometer.json",
+        "license": "MIT",
+        "attribution": "seveibar — Bluetooth pedometer designed with tscircuit; original unrouted CLI export contributed as a routing regression.",
+        "dataset": "pedometer"
+      },
+      "sha256": "f546b05ca6dd9f60702775e0b73fdf2f49cb95002e9ac52a50c73dd6d4c892f4",
+      "canonicalSrjSha256": "8c5bd8225eee5f643fb3444341ca285a1f640f9081b60dba3ba27c342c66c0cd",
+      "boardGeometrySha256": "c65f71245fc1f4e4697864f81ab979e6038bb33bf13147c5e567bb221b57b056",
+      "layerCount": 4,
+      "connectionCount": 66,
+      "terminalCount": 230,
+      "obstacleCount": 190
     }
   ]
 }

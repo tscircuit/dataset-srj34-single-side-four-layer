@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "50 versioned top-component-only SimpleRouteJson benchmarks and a public geometry browser",
+  "description": "51 versioned top-component-only SimpleRouteJson benchmarks and a public geometry browser",
   "license": "MIT",
   "exports": {
     ".": "./lib/dataset.mjs",

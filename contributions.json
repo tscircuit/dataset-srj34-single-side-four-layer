@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "samples": [
+    {
+      "name": "pedometer",
+      "file": "samples/pedometer.json",
+      "category": "contributed-regression",
+      "srjJsonPointer": "",
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj34-single-side-four-layer",
+        "commit": "b07fa8a96acc6cf097b14de128f76ee5acf866d0",
+        "path": "originals/pedometer.json",
+        "url": "https://github.com/tscircuit/dataset-srj34-single-side-four-layer/blob/b07fa8a96acc6cf097b14de128f76ee5acf866d0/originals/pedometer.json",
+        "license": "MIT",
+        "attribution": "seveibar — Bluetooth pedometer designed with tscircuit; original unrouted CLI export contributed as a routing regression.",
+        "dataset": "pedometer"
+      },
+      "sha256": "f546b05ca6dd9f60702775e0b73fdf2f49cb95002e9ac52a50c73dd6d4c892f4"
+    }
+  ]
+}

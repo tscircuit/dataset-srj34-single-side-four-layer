@@ -16,8 +16,16 @@ not remove difficult cases to improve a benchmark score. A source correction nee
 
 For membership changes, update the manifest, selection audit, reproducible
 curation policy, and validation expectations together. Reject duplicate input or
-board-layout fingerprints. The current version deliberately contains 50 cases;
+board-layout fingerprints. The current version contains 51 cases (the original 50 plus one contributed regression);
 consumers pin its revision and must explicitly adopt a changed dataset.
+
+For a new original contribution, preserve the exported input under `originals/`
+with its license notice in a source commit first. Register that immutable commit,
+source path, SHA-256, and attribution in `contributions.json`; append the input
+under `samples/` without rewriting its bytes. Curation reads the pinned Git blob,
+appends contributions in registry order, and applies the same eligibility and
+duplicate checks. Update the browser and membership tests with the new count.
+Keep routed outputs and solver-dependent success claims out of dataset inputs.
 
 Run the checks before opening a pull request:
 

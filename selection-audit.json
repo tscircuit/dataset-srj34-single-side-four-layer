@@ -2103,6 +2103,20 @@
       },
       "path": "fixtures/bug-reports/simplification-trace-overlap-repro/simplification-trace-overlap-repro.json",
       "decision": "not-selected-quota-reached"
+    },
+    {
+      "source": {
+        "repository": "https://github.com/tscircuit/dataset-srj34-single-side-four-layer",
+        "commit": "b07fa8a96acc6cf097b14de128f76ee5acf866d0",
+        "path": "originals/pedometer.json",
+        "url": "https://github.com/tscircuit/dataset-srj34-single-side-four-layer/blob/b07fa8a96acc6cf097b14de128f76ee5acf866d0/originals/pedometer.json",
+        "license": "MIT",
+        "attribution": "seveibar — Bluetooth pedometer designed with tscircuit; original unrouted CLI export contributed as a routing regression.",
+        "dataset": "pedometer"
+      },
+      "path": "originals/pedometer.json",
+      "decision": "selected",
+      "sample": "pedometer"
     }
   ]
 }

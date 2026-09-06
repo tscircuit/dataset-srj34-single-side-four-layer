@@ -1,13 +1,17 @@
-import {readFileSync,writeFileSync,mkdirSync} from 'node:fs'
+import {readFileSync,writeFileSync,mkdirSync,existsSync} from 'node:fs'
 import {resolve,basename,dirname} from 'node:path'
 import {fileURLToPath} from 'node:url'
-import {sha256,canonicalize,boardGeometrySha256,hasBottomComponents} from '../lib/dataset.mjs'
+import {sha256,canonicalize,boardGeometrySha256,hasBottomComponents,getSimpleRouteJson,repositoryRoot} from '../lib/dataset.mjs'
 import {applySourceCorrection} from '../lib/corrections.mjs'
-import {pinnedSources,readGitSnapshot,readPublicLegacyDatasets} from './curation-sources.mjs'
+import {pinnedSources,readGitSnapshot,readPublicLegacyDatasets,readContributedSamples} from './curation-sources.mjs'
 const correctionRegistry=JSON.parse(readFileSync(resolve(dirname(fileURLToPath(import.meta.url)),'../corrections.json'),'utf8'))
 const args=process.argv.slice(2)
 const readArg=name=>{const index=args.indexOf(name);if(index<0||!args[index+1])throw new Error(`Required: ${name} PATH`);return resolve(args[index+1])}
-const root=args.includes('--output-root')?readArg('--output-root'):resolve(dirname(fileURLToPath(import.meta.url)), '..')
+const root=args.includes('--output-root')?readArg('--output-root'):repositoryRoot
+const contributionsRoot=args.includes('--contributions-root')?readArg('--contributions-root'):repositoryRoot
+const contributionsFile=resolve(repositoryRoot,'contributions.json')
+const contributionRegistry=existsSync(contributionsFile)?JSON.parse(readFileSync(contributionsFile,'utf8')):{version:1,samples:[]}
+const contributions=readContributedSamples(contributionsRoot,contributionRegistry)
 const upstream=readArg('--autorouter-root')
 const upstreamCommit=pinnedSources.autorouter.commit
 const legacyRoot=args.includes('--legacy-root')?readArg('--legacy-root'):undefined
@@ -66,11 +70,29 @@ for(const {sample:name,...correction} of correctionRegistry.corrections){
  writeFileSync(resolve(root,sample.file),corrected)
  Object.assign(sample,{sha256:sha256(corrected),canonicalSrjSha256:sha256(canonicalize(srj)),boardGeometrySha256:boardGeometrySha256(srj),correction})
 }
+// Append reviewed regression contributions after the unchanged original fifty.
+// Retain duplicate guards for both original and corrected benchmark geometry.
+for(const sample of selected){contents.add(sample.canonicalSrjSha256);geometry.add(sample.boardGeometrySha256)}
+const selectedNames=new Set(selected.map(sample=>sample.name)), selectedFiles=new Set(selected.map(sample=>sample.file))
+const reservedOriginals=new Set(correctionRegistry.corrections.map(correction=>correction.originalFile))
+for(const {sample,bytes} of contributions){
+ if(selectedNames.has(sample.name)||selectedFiles.has(sample.file)||reservedOriginals.has(sample.source.path))throw new Error(`Contribution conflicts with existing sample or original: ${sample.name}`)
+ const raw=JSON.parse(bytes),srj=getSimpleRouteJson(raw,sample)
+ if(!srj||!Array.isArray(srj.obstacles)||!Array.isArray(srj.connections)||!srj.bounds||!Number.isFinite(srj.minTraceWidth)||srj.minTraceWidth<=0)throw new Error(`Contribution ${sample.name}: invalid SimpleRouteJson`)
+ if(!consider(sample,bytes,raw,srj)){
+   writeFileSync(resolve(root,'selection-audit.json'),JSON.stringify({version:1,decisions},null,2)+'\n')
+   throw new Error(`Contribution ${sample.name} is not eligible: ${decisions.at(-1).decision}`)
+ }
+ selectedNames.add(sample.name);selectedFiles.add(sample.file);reservedOriginals.add(sample.source.path)
+ mkdirSync(dirname(resolve(root,sample.source.path)),{recursive:true})
+ writeFileSync(resolve(root,sample.source.path),bytes)
+}
+if(existsSync(contributionsFile))writeFileSync(resolve(root,'contributions.json'),JSON.stringify(contributionRegistry,null,2)+'\n')
 writeFileSync(resolve(root,'corrections.json'),JSON.stringify(correctionRegistry,null,2)+'\n')
 const manifest={version:1,name:'dataset-srj34-single-side-four-layer',repository:'https://github.com/tscircuit/dataset-srj34-single-side-four-layer',
- selection:{legacyCount:25,bugReportCount:25,policy:'All unique eligible inputs from pinned dataset01/dataset-srj18; then first 25 unique eligible genuine wrapped bug reports in numeric fixture order. Selection never invokes any router.',
+ selection:{legacyCount:25,bugReportCount:25,policy:'All unique eligible inputs from pinned dataset01/dataset-srj18; then first 25 unique eligible genuine wrapped bug reports in numeric fixture order. Selection never invokes any router.'+(contributions.length?' Append explicitly contributed regression inputs in contributions.json order, retaining their original bytes and applying the same eligibility and duplicate checks.':''),
  duplicatePolicy:'Canonical SRJ hash plus conservative board geometry hash: sorted obstacle layout and bounds rounded to 0.00001 mm, ignoring IDs and existing routes.',
- bottomPolicy:'Exclude bottom SMT pads and bottom-only terminals without plated-hole or same-net existing-copper evidence; retain PTH and bottom routing copper.'},samples:selected}
+ bottomPolicy:'Exclude bottom SMT pads and bottom-only terminals without plated-hole or same-net existing-copper evidence; retain PTH and bottom routing copper.',...(contributions.length?{contributedRegressionCount:contributions.length}:{})},samples:selected}
 writeFileSync(resolve(root,'manifest.json'),JSON.stringify(manifest,null,2)+'\n')
 writeFileSync(resolve(root,'selection-audit.json'),JSON.stringify({version:1,decisions},null,2)+'\n')
 console.log(JSON.stringify({count:selected.length,bugReports:selected.filter(x=>x.category==='bug-report').map(x=>x.name),excludedDuplicate:decisions.filter(x=>x.decision==='excluded-duplicate-board').map(x=>x.path)},null,2))
