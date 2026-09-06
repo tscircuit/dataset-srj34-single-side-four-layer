@@ -2,7 +2,9 @@ import {readFileSync,writeFileSync,mkdirSync} from 'node:fs'
 import {resolve,basename,dirname} from 'node:path'
 import {fileURLToPath} from 'node:url'
 import {sha256,canonicalize,boardGeometrySha256,hasBottomComponents} from '../lib/dataset.mjs'
+import {applySourceCorrection} from '../lib/corrections.mjs'
 import {pinnedSources,readGitSnapshot,readPublicLegacyDatasets} from './curation-sources.mjs'
+const correctionRegistry=JSON.parse(readFileSync(resolve(dirname(fileURLToPath(import.meta.url)),'../corrections.json'),'utf8'))
 const args=process.argv.slice(2)
 const readArg=name=>{const index=args.indexOf(name);if(index<0||!args[index+1])throw new Error(`Required: ${name} PATH`);return resolve(args[index+1])}
 const root=args.includes('--output-root')?readArg('--output-root'):resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -53,6 +55,18 @@ for(const {path,bytes} of bugReports){
  if(consider({name:basename(path,'.json'),file:`samples/${basename(path)}`,category:'bug-report',srjJsonPointer:'/simple_route_json',source},bytes,raw,srj))bugCount++
 }
 if(selected.length!==50)throw new Error(`Expected 50 actual unique originals, found ${selected.length}`)
+// Selection remains based on the original upstream files. Apply reviewed corrections afterward.
+for(const {sample:name,...correction} of correctionRegistry.corrections){
+ const sample=selected.find(sample=>sample.name===name)
+ if(!sample)throw new Error(`Correction references unselected sample: ${name}`)
+ const original=readFileSync(resolve(root,sample.file))
+ mkdirSync(dirname(resolve(root,correction.originalFile)),{recursive:true})
+ writeFileSync(resolve(root,correction.originalFile),original)
+ const corrected=applySourceCorrection(original,correction),srj=JSON.parse(corrected).simple_route_json
+ writeFileSync(resolve(root,sample.file),corrected)
+ Object.assign(sample,{sha256:sha256(corrected),canonicalSrjSha256:sha256(canonicalize(srj)),boardGeometrySha256:boardGeometrySha256(srj),correction})
+}
+writeFileSync(resolve(root,'corrections.json'),JSON.stringify(correctionRegistry,null,2)+'\n')
 const manifest={version:1,name:'dataset-srj34-single-side-four-layer',repository:'https://github.com/tscircuit/dataset-srj34-single-side-four-layer',
  selection:{legacyCount:25,bugReportCount:25,policy:'All unique eligible inputs from pinned dataset01/dataset-srj18; then first 25 unique eligible genuine wrapped bug reports in numeric fixture order. Selection never invokes any router.',
  duplicatePolicy:'Canonical SRJ hash plus conservative board geometry hash: sorted obstacle layout and bounds rounded to 0.00001 mm, ignoring IDs and existing routes.',

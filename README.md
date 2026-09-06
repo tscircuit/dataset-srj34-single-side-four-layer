@@ -1,6 +1,6 @@
 # dataset-srj34-single-side-four-layer
 
-50 genuine, immutable SimpleRouteJson benchmark inputs for via-in-pad, four-layer autorouting, curated for boards with components on top. This public repository was provisioned through `tscircuit/create-repo`.
+50 versioned SimpleRouteJson benchmark inputs for via-in-pad, four-layer autorouting, curated for boards with components on top. This public repository was provisioned through `tscircuit/create-repo`.
 
 | Source | Cases | Pinned commit |
 | --- | ---: | --- |
@@ -10,17 +10,23 @@
 
 [Browse the dataset](https://dataset-srj34-single-side-four-layer.vercel.app/) · [Open a pull request](https://github.com/tscircuit/dataset-srj34-single-side-four-layer/compare)
 
-The `staff` and `maintainers` teams have maintain access. See [Contributing](CONTRIBUTING.md) for pull requests, immutable sample requirements, and local checks. Dataset integrity and site builds run in CI. The hosted dataset browser deploys from `main` through Vercel.
+The `staff` and `maintainers` teams have maintain access. See [Contributing](CONTRIBUTING.md) for pull requests, source provenance requirements, and local checks. Dataset integrity and site builds run in CI. The hosted dataset browser deploys from `main` through Vercel.
 
 The name describes the target routing technique: components on one side, routing on a four-layer board. Original inputs retain their one-, two-, or four-layer stacks unchanged.
 
 ## Original files and provenance
 
-Every sample is a byte-for-byte copy of its original file at the recorded upstream commit. Dataset-srj18 contributes `sample010` (Antmicro HDMI EDID Debug Board) and `sample012` (Antmicro OCuLink PCIe Adapter). Original source-board attribution remains intact.
+49 samples are byte-for-byte copies of their original files at the recorded upstream commits. `bugreport02-bc4361` is a derived input with one approved board-boundary correction; its byte-identical upstream original is retained in [`originals/bugreport02-bc4361.json`](originals/bugreport02-bc4361.json). Dataset-srj18 contributes `sample010` (Antmicro HDMI EDID Debug Board) and `sample012` (Antmicro OCuLink PCIe Adapter). Original source-board attribution remains intact.
 
-Bug reports retain their JSON wrappers, report IDs, metadata, and `simple_route_json` objects. The manifest's `srjJsonPointer` is empty for direct SRJ files and `/simple_route_json` for report wrappers. No coordinates, net labels, widths, layer counts, pad geometry, or existing routes were rewritten. Happy-autorouter upgrades eligible input boards to four layers at runtime.
+Bug reports retain their JSON wrappers, report IDs, metadata, and `simple_route_json` objects. The manifest's `srjJsonPointer` is empty for direct SRJ files and `/simple_route_json` for report wrappers. All component/pad coordinates, net labels, widths, layer counts, pad geometry, existing routes, and report metadata remain unchanged. The sole correction is `/simple_route_json/bounds/maxX`: `6.35` → `7.15` mm for `bugreport02-bc4361`. Happy-autorouter upgrades eligible input boards to four layers at runtime.
 
-`manifest.json` records original source URLs, commits and paths, original-byte SHA-256, canonical SRJ hashes, conservative layout hashes, and input sizes. `selection-audit.json` records selection and exclusion decisions. No generated circuits, scaled copies, renamed copies, or routed outputs were added to reach the count.
+`manifest.json` records original source URLs, commits and paths, benchmark-byte SHA-256, canonical SRJ hashes, conservative layout hashes, and input sizes. `selection-audit.json` records selection and exclusion decisions. No generated circuits, scaled copies, renamed copies, or routed outputs were added to reach the count.
+
+### Approved boundary correction
+
+`bugreport02-bc4361` originally placed existing plated-hole copper outside its right board edge. Its corrected `maxX = 7.15` mm supplies 0.20 mm board-edge clearance. [`corrections.json`](corrections.json) and the manifest retain the exact patch, reason, original-byte hash, original SRJ/layout hashes, and preserved-file path. The original SHA-256 is `d753bde5bbb87b117b02b7d8e30d552c2ddc3ba0e5be80d03340b830b98f95d8`.
+
+The suite still contains the same 50 sample names in the same order. This is an explicit dataset revision; consumers must adopt its new commit and rerun both sides of a benchmark comparison. The browser labels the corrected input and offers its benchmark file and preserved original separately.
 
 ## Deterministic selection
 
@@ -48,7 +54,7 @@ npm test
 npm run validate:upstream
 ```
 
-`npm test` verifies original bytes, extracted SRJ hashes, layout uniqueness, exact 25+25 membership, provenance, sizes, and top-side eligibility. `validate:upstream` additionally downloads all 50 immutable upstream files and confirms byte equality. GitHub Actions checks local integrity on each push and pull request.
+`npm test` verifies benchmark bytes, preserved originals, exact declared correction, extracted SRJ hashes, layout uniqueness, exact 25+25 membership/order, provenance, sizes, and top-side eligibility. `validate:upstream` additionally downloads all 50 immutable upstream files and confirms equality with the unmodified samples or preserved original. GitHub Actions checks local integrity on each push and pull request.
 
 Reproduce curation using Git checkouts of the three public source repositories. Fetch the pinned commits if they are not already present:
 
@@ -63,7 +69,7 @@ npm run curate -- \
   --output-root /tmp/srj34-reproduced
 ```
 
-Curation reads the exact pinned Git trees and file bytes, independent of each checkout's current branch or uncommitted changes. The optional output directory lets you compare a fresh reproduction without rewriting the checked-in dataset. Omit `--output-root` to update this repository intentionally. The older `--legacy-root` option remains compatible with existing vendored dataset01/dataset-srj18 inputs.
+Curation selects from the exact pinned Git trees and file bytes, independent of each checkout's current branch or uncommitted changes, then reproducibly applies the declared correction and preserves its original. The optional output directory lets you compare a fresh reproduction without rewriting the checked-in dataset. Omit `--output-root` to update this repository intentionally. The older `--legacy-root` option remains compatible with existing vendored dataset01/dataset-srj18 inputs.
 
 ## Licensing
 
