@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "corrections": [
+    {
+      "sample": "bugreport02-bc4361",
+      "originalFile": "originals/bugreport02-bc4361.json",
+      "originalSha256": "d753bde5bbb87b117b02b7d8e30d552c2ddc3ba0e5be80d03340b830b98f95d8",
+      "originalCanonicalSrjSha256": "d8c4f187b26537e5e3326e9c41bb20e02ff3c5786d6ce5ecf3991ad2843bd2a4",
+      "originalBoardGeometrySha256": "1e17c0522a843d3465d3e15c168c9ff4821e5e38a9e11a4ac01bea80586ee53e",
+      "changes": [
+        {
+          "path": "/simple_route_json/bounds/maxX",
+          "from": 6.35,
+          "to": 7.15
+        }
+      ],
+      "reason": "Approved correction of a truncated right board boundary that excluded existing plated-hole copper. Increasing maxX to 7.15 mm supplies the required 0.20 mm board-edge clearance. All other source geometry, connectivity, rules, and report metadata remain unchanged."
+    }
+  ]
+}

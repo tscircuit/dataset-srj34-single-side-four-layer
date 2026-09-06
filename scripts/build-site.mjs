@@ -15,11 +15,20 @@ export async function buildSite(output = resolve(repositoryRoot, "dist")) {
   await mkdir(resolve(output, "licenses"), { recursive: true })
   for (const notice of ["LICENSE", "licenses/README.md", "licenses/dataset01-MIT.txt", "licenses/tscircuit-autorouter-MIT.txt", "licenses/oculink-pcie-adapter-Apache-2.0.txt", "licenses/hdmi-edid-debug-board-Apache-2.0.txt", "licenses/dataset-srj18-source-files.json"]) await copyFile(resolve(repositoryRoot, notice), resolve(output, notice))
   await writeFile(resolve(output, "manifest.json"), manifestBytes)
+  await copyFile(resolve(repositoryRoot, "corrections.json"), resolve(output, "corrections.json"))
+  await mkdir(resolve(output, "originals"), { recursive: true })
   const samples = []
   for (const sample of manifest.samples) {
     if (!/^samples\/[a-zA-Z0-9_-]+\.json$/.test(sample.file) || !/^[a-zA-Z0-9_-]+$/.test(sample.name)) throw new Error(`Unsafe sample path: ${sample.name}`)
     const bytes = await readFile(resolve(repositoryRoot, sample.file))
     if (sha256(bytes) !== sample.sha256) throw new Error(`Sample checksum mismatch: ${sample.name}`)
+    if (sample.correction) {
+      const { originalFile, originalSha256 } = sample.correction
+      if (!/^originals\/[a-zA-Z0-9_-]+\.json$/.test(originalFile)) throw new Error("Unsafe original path")
+      const original = await readFile(resolve(repositoryRoot, originalFile))
+      if (sha256(original) !== originalSha256) throw new Error(`Original checksum mismatch: ${sample.name}`)
+      await writeFile(resolve(output, originalFile), original)
+    }
     const srj = getSimpleRouteJson(JSON.parse(bytes.toString()), sample)
     if (!Array.isArray(srj.obstacles) || !Array.isArray(srj.connections) || !srj.bounds) throw new Error(`Invalid SRJ: ${sample.name}`)
     await writeFile(resolve(output, sample.file), bytes)
@@ -32,5 +41,5 @@ export async function buildSite(output = resolve(repositoryRoot, "dist")) {
 }
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const result = await buildSite()
-  console.log(`Built public dataset browser: ${result.sampleCount} verified original files + extracted SRJs in ${result.output}`)
+  console.log(`Built public dataset browser: ${result.sampleCount} verified benchmark files + extracted SRJs and preserved originals in ${result.output}`)
 }

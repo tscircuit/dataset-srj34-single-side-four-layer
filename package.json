@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "50 original top-component-only SimpleRouteJson benchmarks and a public geometry browser",
+  "description": "50 versioned top-component-only SimpleRouteJson benchmarks and a public geometry browser",
   "license": "MIT",
   "exports": {
     ".": "./lib/dataset.mjs",
     "./manifest.json": "./manifest.json"
   },
   "scripts": {
-    "test": "node scripts/filter.test.mjs && node scripts/validate.mjs && node --test scripts/site.test.mjs scripts/curation-sources.test.mjs",
+    "test": "node scripts/filter.test.mjs && node scripts/validate.mjs && node --test scripts/site.test.mjs scripts/curation-sources.test.mjs scripts/corrections.test.mjs",
     "validate": "node scripts/validate.mjs",
     "validate:upstream": "node scripts/validate.mjs --verify-remote",
     "curate": "node scripts/curate.mjs",

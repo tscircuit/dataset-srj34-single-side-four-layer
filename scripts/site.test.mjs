@@ -8,11 +8,11 @@ import { canonicalize, getSimpleRouteJson, readSample, repositoryRoot, sha256 } 
 import { availableLayers, frameFor, geometrySvg, obstacleKind } from "../site/geometry.mjs"
 
 const manifest = JSON.parse(await readFile(resolve(repositoryRoot, "manifest.json"), "utf8"))
-test("public build has only explicit assets and exact original bytes, with correct wrapped SRJ downloads", async () => {
+test("public build has only explicit assets and exact benchmark and preserved original bytes, with correct wrapped SRJ downloads", async () => {
   const output = await mkdtemp(resolve(tmpdir(), "srj34-site-test-"))
   try {
     assert.equal((await buildSite(output)).sampleCount, 50)
-    assert.deepEqual((await readdir(output)).sort(), ["LICENSE", "app.mjs", "catalog.json", "geometry.mjs", "index.html", "licenses", "manifest.json", "samples", "srj", "styles.css"])
+    assert.deepEqual((await readdir(output)).sort(), ["LICENSE", "app.mjs", "catalog.json", "corrections.json", "geometry.mjs", "index.html", "licenses", "manifest.json", "originals", "samples", "srj", "styles.css"])
     const catalog = JSON.parse(await readFile(resolve(output, "catalog.json"), "utf8"))
     assert.equal(catalog.samples.length, 50)
     assert.equal((await readdir(resolve(output, "samples"))).length, 50)
@@ -20,6 +20,9 @@ test("public build has only explicit assets and exact original bytes, with corre
     for (const sample of catalog.samples) {
       const original = await readFile(resolve(output, sample.file))
       assert.equal(sha256(original), sample.sha256)
+      if (sample.correction) {
+        assert.equal(sha256(await readFile(resolve(output, sample.correction.originalFile))), sample.correction.originalSha256)
+      }
       const expected = getSimpleRouteJson(JSON.parse(original), sample)
       const extracted = JSON.parse(await readFile(resolve(output, `.${sample.srjFile}`), "utf8"))
       assert.equal(canonicalize(extracted), canonicalize(expected))

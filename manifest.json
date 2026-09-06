@@ -548,13 +548,27 @@
         "license": "MIT",
         "bugReportId": "bc436135-963b-4878-9af3-1c3e41b15dd9"
       },
-      "sha256": "d753bde5bbb87b117b02b7d8e30d552c2ddc3ba0e5be80d03340b830b98f95d8",
-      "canonicalSrjSha256": "d8c4f187b26537e5e3326e9c41bb20e02ff3c5786d6ce5ecf3991ad2843bd2a4",
-      "boardGeometrySha256": "1e17c0522a843d3465d3e15c168c9ff4821e5e38a9e11a4ac01bea80586ee53e",
+      "sha256": "49b84bd25b4eb33cbbf49b1bc8fb8b39d777a84cb9ad75669713eb88d8e1b521",
+      "canonicalSrjSha256": "ec5c2b848568604ddc3c12d04a2702b73cc1f5d62417b3145c0207263037f455",
+      "boardGeometrySha256": "ba851ab84ee0941d100fe13a28c0934e2d6324ade8f5b7254eea5c614e4273e3",
       "layerCount": 2,
       "connectionCount": 16,
       "terminalCount": 41,
-      "obstacleCount": 34
+      "obstacleCount": 34,
+      "correction": {
+        "originalFile": "originals/bugreport02-bc4361.json",
+        "originalSha256": "d753bde5bbb87b117b02b7d8e30d552c2ddc3ba0e5be80d03340b830b98f95d8",
+        "originalCanonicalSrjSha256": "d8c4f187b26537e5e3326e9c41bb20e02ff3c5786d6ce5ecf3991ad2843bd2a4",
+        "originalBoardGeometrySha256": "1e17c0522a843d3465d3e15c168c9ff4821e5e38a9e11a4ac01bea80586ee53e",
+        "changes": [
+          {
+            "path": "/simple_route_json/bounds/maxX",
+            "from": 6.35,
+            "to": 7.15
+          }
+        ],
+        "reason": "Approved correction of a truncated right board boundary that excluded existing plated-hole copper. Increasing maxX to 7.15 mm supplies the required 0.20 mm board-edge clearance. All other source geometry, connectivity, rules, and report metadata remain unchanged."
+      }
     },
     {
       "name": "bugreport03-fe4a17",

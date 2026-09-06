@@ -15,6 +15,7 @@ function drawList() {
     button.append(element("strong", sample.name))
     const meta = element("span", undefined, "sample-item-meta")
     meta.append(element("span", `${sample.layerCount}L`, "badge"), element("span", sample.category === "bug-report" ? "Bug report" : sample.source.dataset), element("span", `${sample.connectionCount} net${sample.connectionCount === 1 ? "" : "s"}`, "count"))
+    if (sample.correction) meta.append(element("span", "Corrected", "badge"))
     button.append(meta); button.addEventListener("click", () => selectSample(sample.name)); return button
   }))
   if (!shown.length) $("sample-list").append(element("p", "No matching samples. Try another search or clear the filters.", "empty"))
@@ -53,6 +54,15 @@ async function selectSample(name, updateHistory = true) {
     $("sample-category").textContent = `${sample.category === "bug-report" ? "Bug report" : "Original dataset"} / ${sample.source.dataset ?? "tscircuit-autorouter"}`
     $("sample-stats").replaceChildren(...[[sample.connectionCount,"connections"],[sample.terminalCount,"terminals"],[sample.obstacleCount,"obstacles"],[`${sample.layerCount} layer${sample.layerCount === 1 ? "" : "s"}`,"original stack"],[`${compact(srj.bounds.maxX-srj.bounds.minX)} × ${compact(srj.bounds.maxY-srj.bounds.minY)}`,"bounds · mm"]].map(([value,label]) => { const item=element("div"); item.append(element("strong",value),element("span",label)); return item }))
     $("srj-download").href = sample.srjFile; $("srj-download").download = `${sample.name}.srj.json`
+    $("raw-download").textContent = sample.correction ? "Corrected file ↓" : "Original file ↓"
+    $("original-download").hidden = !sample.correction
+    if (sample.correction) {
+      $("original-download").href = `/${sample.correction.originalFile}`
+      $("original-download").download = `${sample.name}.original.json`
+    }
+    $("input-provenance").textContent = sample.correction
+      ? `Derived input: ${sample.correction.changes.map(change => `${change.path}: ${change.from} → ${change.to}`).join("; ")}. ${sample.correction.reason} The preserved original remains byte-for-byte upstream data.`
+      : "This input is byte-for-byte upstream data. Wrapped bug reports also provide an extracted SRJ download."
     $("raw-download").href = `/${sample.file}`; $("raw-download").download = `${sample.name}.json`
     $("layers").replaceChildren(...state.layers.map(layer => { const button=element("button",undefined,"layer-button"); button.type="button"; button.style.setProperty("--layer-color",LAYER_COLORS[layer] ?? "#9caec2"); button.setAttribute("aria-pressed","true"); button.append(element("span"),document.createTextNode(layer)); button.addEventListener("click",() => { state.layers = state.layers.includes(layer) ? state.layers.filter(value => value !== layer) : [...state.layers,layer]; button.setAttribute("aria-pressed",String(state.layers.includes(layer))); redraw() }); return button }))
     $("net-select").replaceChildren(new Option("All connections", ""), ...srj.connections.map(connection => new Option(connection.name, connection.name)))
